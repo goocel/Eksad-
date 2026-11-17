@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style Guide — EKSAD Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&family=Red+Hat+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Memakai stylesheet yang sama dengan website: apa yang tampil di sini = apa yang dipakai halaman -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  /* gaya khusus halaman style guide (tidak dipakai di website) */
+  .sg-top{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+  .sg-top h1{font-size:clamp(40px,5vw,72px);line-height:1.05}
+  .sg-top p{margin-top:16px;max-width:680px;font-size:18px;color:var(--ink)}
+  .sg-nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px}
+  .sg-nav a{font-size:14px;font-weight:500;color:var(--muted)}
+  .sg-nav a:hover{color:var(--blue)}
+  .sg{padding:72px 0;border-bottom:1px solid var(--line)}
+  .sg h2{font-size:clamp(28px,3vw,40px);margin-bottom:8px}
+  .sg-note{color:var(--muted);font-size:15px;margin-bottom:32px;max-width:720px}
+  .sg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+  .sw{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .sw i{display:block;height:84px}
+  .sw div{padding:10px 12px;font-size:13px;line-height:1.45;color:var(--ink)}
+  .sw code{display:block;color:var(--muted);font-size:12px}
+  .sg-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px}
+  .sg-type>div{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line)}
+  .sg-type small{font-size:12px;color:var(--muted);line-height:1.5}
+  .sg-demo{border:1px dashed var(--line);border-radius:12px;padding:32px;background:#fff}
+  .sg-demo.tint{background:var(--tint)}
+  .sg-demo.feat{background:var(--tint-blue)}
+  .sg-demo.cta{background:#eef1f8;text-align:center}
+  .sg-table{width:100%;border-collapse:collapse;font-size:14px;color:var(--ink)}
+  .sg-table th,.sg-table td{text-align:left;padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+  .sg-table th{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .sg-table code{font-size:12.5px;color:var(--blue)}
+  .sg-do{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .sg-do>div{border-radius:12px;padding:20px 24px;border:1px solid var(--line);background:#fff;font-size:15px;color:var(--ink)}
+  .sg-do h3{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+  .sg-do .ok h3{color:#1f8a4c}.sg-do .no h3{color:var(--red)}
+  .sg-do li{margin:6px 0 6px 18px;list-style:disc}
+  .sg-scroll{overflow-x:auto}
+  @media (max-width:700px){.sg-type>div{grid-template-columns:1fr;gap:6px}.sg-do{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="sg-top">
+  <div class="container">
+    <img src="../cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology" style="height:40px;margin-bottom:32px">
+    <h1>Style Guide. Diturunkan dari Home.</h1>
+    <p>Referensi visual untuk membuat halaman berikutnya (Our Services, Blog, Career, Contact). Panduan lengkap ada di <code>design-system/README.md</code>; template halaman di <code>design-system/page-template.html</code>.</p>
+    <nav class="sg-nav" aria-label="Isi">
+      <a href="#warna">Warna</a><a href="#tipografi">Tipografi</a><a href="#tombol">Tombol &amp; link</a><a href="#ikon">Ikon</a><a href="#pola">Pola section</a><a href="#gerak">Gerak</a><a href="#aturan">Aturan</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ WARNA ============ -->
+<section class="sg" id="warna">
+  <div class="container">
+    <h2>Warna</h2>
+    <p class="sg-note">Semua warna adalah token di <code>:root</code> pada style.css. Pakai token, jangan menulis hex baru. Biru = aksi utama, cyan = aksen, merah = aksen kecil (jarum, kunci, hover tertentu), navy/ink = teks.</p>
+    <div class="sg-grid">
+      <div class="sw"><i style="background:var(--blue)"></i><div>Blue<code>--blue · #1B5EAB</code></div></div>
+      <div class="sw"><i style="background:var(--blue-600)"></i><div>Blue 600<code>--blue-600 · #174f91</code></div></div>
+      <div class="sw"><i style="background:var(--cyan)"></i><div>Cyan<code>--cyan · #29B6E8</code></div></div>
+      <div class="sw"><i style="background:var(--cyan-200)"></i><div>Cyan 200<code>--cyan-200 · #9fdcf3</code></div></div>
+      <div class="sw"><i style="background:var(--red)"></i><div>Red<code>--red · #E8222E</code></div></div>
+      <div class="sw"><i style="background:var(--navy)"></i><div>Navy<code>--navy · #061a33</code></div></div>
+      <div class="sw"><i style="background:var(--navy-2)"></i><div>Navy 2 (hover tombol)<code>--navy-2 · #0b2a52</code></div></div>
+      <div class="sw"><i style="background:var(--ink)"></i><div>Ink (judul)<code>--ink · #0d1b2e</code></div></div>
+      <div class="sw"><i style="background:var(--text)"></i><div>Text (paragraf)<code>--text · #2c3a4d</code></div></div>
+      <div class="sw"><i style="background:var(--muted)"></i><div>Muted (label, meta)<code>--muted · #5f6c7f</code></div></div>
+      <div class="sw"><i style="background:var(--line)"></i><div>Line (garis)<code>--line · #dfe4eb</code></div></div>
+      <div class="sw"><i style="background:var(--bg);border-bottom:1px solid var(--line)"></i><div>Background<code>--bg · #ffffff</code></div></div>
+      <div class="sw"><i style="background:var(--tint)"></i><div>Tint (section selang-seling)<code>--tint · #f2f5f9</code></div></div>
+      <div class="sw"><i style="background:var(--tint-blue)"></i><div>Tint blue (section .feature)<code>--tint-blue · #e6f1fa</code></div></div>
+      <div class="sw"><i style="background:#eef1f8"></i><div>CTA stage<code>#eef1f8</code></div></div>
+      <div class="sw"><i style="background:linear-gradient(135deg,#5a9be6,#1B5EAB 55%,#0e3466)"></i><div>Gradien ikon biru<code>#pgBlue</code></div></div>
+      <div class="sw"><i style="background:linear-gradient(135deg,#ffb37a,#ff6a4d 50%,#E8222E)"></i><div>Gradien ikon merah<code>#pgRed</code></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIPOGRAFI ============ -->
+<section class="sg" id="tipografi">
+  <div class="container">
+    <h2>Tipografi</h2>
+    <p class="sg-note">Dua font: <b>Red Hat Display</b> (semua judul, weight 600) dan <b>Red Hat Text</b> (teks, weight 300 untuk paragraf, 500–600 untuk UI). Judul berbahasa Inggris, teks penjelas berbahasa Indonesia.</p>
+    <div class="sg-type">
+      <div><small>Page hero H1<br><code>.page-hero h1</code> · 44–92px</small><h1 style="font-size:clamp(40px,5.4vw,80px);line-height:1.04;letter-spacing:-.02em">Built for Growth.</h1></div>
+      <div><small>Section H2<br><code>h2</code> · 34–60px</small><h2 style="margin:0">Three Values. One Way We Work.</h2></div>
+      <div><small>CTA headline<br><code>.cta-stage h2</code> · 46–124px</small><p style="font-family:var(--serif);font-weight:600;font-size:clamp(46px,6vw,96px);line-height:1.05;letter-spacing:-.02em;color:var(--ink)">Let's Grow Together!</p></div>
+      <div><small>H3 / judul kartu<br><code>h3</code> · 26–48px</small><h3 style="font-size:clamp(28px,3vw,44px)">ProCloud</h3></div>
+      <div><small>Lead / subjudul<br><code>.sec-intro p</code> · 17–21px · 300</small><p style="font-size:clamp(17px,1.5vw,21px);font-weight:300;line-height:1.5;color:var(--ink);max-width:640px;text-wrap:balance">Dari dealer management, HCIS, hingga keamanan siber — semua kebutuhan teknologi bisnis Anda tersedia dalam satu ekosistem.</p></div>
+      <div><small>Body<br><code>body</code> · 16px · 300 · lh 1.6</small><p style="max-width:640px">Paragraf biasa memakai warna <code>--text</code>. Jaga panjang baris maksimal ±70 karakter (max-width 520–720px).</p></div>
+      <div><small>Label / eyebrow di dalam kartu<br><code>.kicker</code>, <code>.px-pcat</code> · 11.5–12px · 600 · uppercase</small><span class="kicker" style="margin:0;color:var(--muted)">Dealer Management System</span></div>
+      <div><small>Teks kecil / meta<br><code>.v-desc</code> · 13.5px · muted</small><span class="v-desc" style="max-width:none">Standar kerja tinggi di setiap proyek.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOMBOL ============ -->
+<section class="sg" id="tombol">
+  <div class="container">
+    <h2>Tombol &amp; link</h2>
+    <p class="sg-note">Tombol kotak membulat (radius 10px), huruf kapital, panah → yang bergeser saat hover. Tombol pil hanya untuk header (Contact Us) dan CTA (Hubungi Kami).</p>
+    <div class="sg-row">
+      <a href="#" class="btn btn-primary">Learn More <span class="arr" aria-hidden="true">→</span></a>
+      <a href="#" class="btn btn-accent" style="box-shadow:inset 0 0 0 1px rgba(13,27,46,.08)">Learn More <span class="arr" aria-hidden="true">→</span></a>
+      <a href="#" class="btn btn-primary btn-sm">Small <span class="arr" aria-hidden="true">→</span></a>
+      <a href="#" class="cta-btn" style="pointer-events:auto">Hubungi Kami <span aria-hidden="true">●</span></a>
+      <a href="#" class="nav-cta">Contact Us</a>
+      <a href="#" class="u-link">Back to top ↑</a>
+    </div>
+    <div class="sg-scroll" style="margin-top:28px">
+      <table class="sg-table">
+        <tr><th>Kelas</th><th>Kapan dipakai</th></tr>
+        <tr><td><code>.btn.btn-primary</code></td><td>Aksi utama di section (Learn More, Discover Our Culture)</td></tr>
+        <tr><td><code>.btn.btn-accent</code></td><td>Di atas foto / panel kaca (kartu About)</td></tr>
+        <tr><td><code>.cta-btn</code></td><td>Hanya di CTA stage</td></tr>
+        <tr><td><code>.nav-cta</code></td><td>Hanya di header</td></tr>
+        <tr><td><code>.u-link</code></td><td>Link teks sekunder (Back to top)</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IKON ============ -->
+<section class="sg" id="ikon">
+  <div class="container">
+    <h2>Ikon</h2>
+    <p class="sg-note">Ikon SVG dengan gradien terang → jenuh → gelap, kilau putih transparan, bayangan lembut, dan melayang pelan (4 detik). Gradien produk dipakai bersama lewat <code>url(#pgBlue)</code> / <code>url(#pgRed)</code> yang didefinisikan sekali di awal <code>&lt;body&gt;</code>.</p>
+    <div class="sg-row" style="gap:48px">
+      <div class="v-item" style="position:static;width:200px;margin:0">
+        <span class="v-icon" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <defs><linearGradient id="sgOpt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb37a"/><stop offset=".5" stop-color="#ff6a4d"/><stop offset="1" stop-color="#E8222E"/></linearGradient></defs>
+          <path d="M32 2c2.2 13.5 6.5 22.3 13 26.5 3.7 2.4 8.7 3.2 15 3.5-6.3.3-11.3 1.1-15 3.5C38.5 39.7 34.2 48.5 32 62c-2.2-13.5-6.5-22.3-13-26.5C15.3 33.1 10.3 32.3 4 32c6.3-.3 11.3-1.1 15-3.5C25.5 24.3 29.8 15.5 32 2z" fill="url(#sgOpt)"/>
+          <ellipse cx="27" cy="22" rx="3.5" ry="7" fill="#fff" opacity=".3" transform="rotate(20 27 22)"/>
+        </svg></span>
+        <span class="v-text"><span class="v-label">Optimist</span><span class="v-desc">Contoh ikon acuan</span></span>
+      </div>
+      <div class="v-item" style="position:static;width:200px;margin:0">
+        <span class="v-icon" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <defs><linearGradient id="sgRel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4c8fe0"/><stop offset=".6" stop-color="#1B5EAB"/><stop offset="1" stop-color="#0b2a52"/></linearGradient></defs>
+          <path d="M32 4l22 8v16c0 15-9.5 26.5-22 32C19.5 54.5 10 43 10 28V12z" fill="url(#sgRel)"/>
+          <path d="M32 4l22 8v16c0 15-9.5 26.5-22 32z" fill="#000" opacity=".12"/>
+          <circle cx="32" cy="30" r="9" fill="none" stroke="#fff" stroke-width="4.5"/>
+          <ellipse cx="22" cy="16" rx="7" ry="4" fill="#fff" opacity=".25" transform="rotate(-20 22 16)"/>
+        </svg></span>
+        <span class="v-text"><span class="v-label">Reliable</span><span class="v-desc">Sisi gelap 12% = kesan 3D</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POLA SECTION ============ -->
+<section class="sg" id="pola">
+  <div class="container">
+    <h2>Pola section</h2>
+    <p class="sg-note">Setiap section: <code>&lt;section class="section"&gt;</code> + <code>.container</code>. Padding 96px (HP 64px). Latar bergantian putih → <code>.section-tint</code> → <code>.feature</code> (tint biru) supaya ritme halaman terasa. Judul section tanpa kicker.</p>
+
+    <div class="sg-demo" style="margin-bottom:20px">
+      <div class="sec-intro" style="margin-bottom:0">
+        <h2>Section Intro. Rata Kiri.</h2>
+        <p>Pola default <code>.sec-intro</code>: judul dua frasa lalu paragraf pengantar dua baris yang seimbang.</p>
+      </div>
+    </div>
+    <div class="sg-demo tint" style="margin-bottom:20px">
+      <div class="sec-intro sec-intro-center" style="margin-bottom:0">
+        <h2>Section Intro. Rata Tengah.</h2>
+        <p>Tambah <code>.sec-intro-center</code> untuk section yang isinya simetris, misalnya deretan logo klien.</p>
+      </div>
+    </div>
+    <div class="sg-demo feat" style="margin-bottom:20px">
+      <div class="feature-copy">
+        <h2 style="margin-bottom:16px">Feature Split. Teks + Visual.</h2>
+        <p style="margin-bottom:24px">Pola <code>.feature-grid</code>: kolom teks kiri (judul, paragraf, tombol) dan visual kanan.</p>
+        <a href="#" class="btn btn-primary">Discover Our Culture <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="sg-demo cta">
+      <p class="cta-kicker" style="margin-bottom:16px">Siap mempercepat bisnis Anda?</p>
+      <p style="font-family:var(--serif);font-weight:600;font-size:clamp(40px,5vw,72px);line-height:1.05;color:var(--ink);margin-bottom:24px">Let's Grow Together!</p>
+      <a href="#" class="cta-btn">Hubungi Kami <span aria-hidden="true">●</span></a>
+    </div>
+
+    <div class="sg-scroll" style="margin-top:32px">
+      <table class="sg-table">
+        <tr><th>Pola</th><th>Kelas utama</th><th>Contoh di Home</th></tr>
+        <tr><td>Hero halaman dalam</td><td><code>.page-hero</code> (+ <code>.crumb</code>, <code>.lead</code>)</td><td>— (baru, untuk Services/Blog/Career/Contact)</td></tr>
+        <tr><td>Bento foto</td><td><code>.bento</code>, <code>.b-img</code> + <code>.b-bg</code>, <code>.b-photo-card</code></td><td>About</td></tr>
+        <tr><td>Daftar + panggung</td><td><code>.px</code>, <code>.px-row</code>, <code>.px-panel</code></td><td>Products</td></tr>
+        <tr><td>Feature split</td><td><code>.feature</code>, <code>.feature-grid</code>, <code>.feature-copy</code></td><td>Our Value</td></tr>
+        <tr><td>Marquee logo</td><td><code>.marquee</code>, <code>.mq-row</code>, <code>.mq-track</code></td><td>Clients</td></tr>
+        <tr><td>CTA stage</td><td><code>.cta-stage</code>, <code>.cta-title</code>, <code>.cta-btn</code></td><td>CTA (wajib di semua halaman)</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GERAK ============ -->
+<section class="sg" id="gerak">
+  <div class="container">
+    <h2>Gerak</h2>
+    <p class="sg-note">Animasi halus dan bermakna; semuanya dimatikan bila pengguna memilih <i>reduced motion</i>. Semua ada di <code>assets/js/main.js</code> dan aktif otomatis bila elemennya ada di halaman.</p>
+    <div class="sg-scroll">
+      <table class="sg-table">
+        <tr><th>Efek</th><th>Pemicu</th><th>Parameter</th></tr>
+        <tr><td>Reveal kartu (clip-path membuka + naik, foto zoom-out, teks menyusul)</td><td>Masuk layar 75%</td><td>expo.out 1.4s, stagger 0.14s</td></tr>
+        <tr><td>Fade-up teks</td><td>Masuk layar</td><td>y 30–50px → 0, power3.out 0.9s</td></tr>
+        <tr><td>Rol huruf CTA (huruf acak turun/naik lalu diganti huruf sama)</td><td>Loop setelah CTA terlihat</td><td>0.75s power3.inOut, tiap 0.7–1.4s</td></tr>
+        <tr><td>Ikon melayang</td><td>Terus-menerus</td><td>±6px, 4s ease-in-out</td></tr>
+        <tr><td>Marquee logo</td><td>Terus-menerus + dorongan scroll</td><td>90px/s, hover melambat ke 20%</td></tr>
+        <tr><td>Showcase produk</td><td>Hover/klik/otomatis</td><td>5s per item, garis progres</td></tr>
+        <tr><td>Footer bounce</td><td>Kecepatan scroll</td><td>elastic.out(1.1, 0.25) 1.6s</td></tr>
+        <tr><td>Hover foto</td><td>Hover kartu</td><td>scale 1.03 → 1.09, 1.2s</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATURAN ============ -->
+<section class="sg" id="aturan">
+  <div class="container">
+    <h2>Aturan</h2>
+    <p class="sg-note">Preferensi yang sudah ditetapkan selama pembuatan Home.</p>
+    <div class="sg-do">
+      <div class="ok"><h3>Lakukan</h3><ul>
+        <li>Judul pendek dua frasa bergaya BCG ("Built for Growth. Driven by Technology.")</li>
+        <li>Subjudul dua baris, baris kedua tidak hanya 1 kata (<code>text-wrap: balance</code>)</li>
+        <li>Jarak atas & bawah konten di section sama</li>
+        <li>Foto asli / Unsplash yang representatif, dengan gradasi navy agar teks terbaca</li>
+        <li>Ikon dan teks dalam satu kolom rata kiri pada satu garis tepi</li>
+        <li>Pakai ulang header, footer, dan CTA dari template</li>
+      </ul></div>
+      <div class="no"><h3>Hindari</h3><ul>
+        <li>Label kecil (kicker) di atas judul section</li>
+        <li>Shadow pada kartu</li>
+        <li>Kartu / kotak di belakang logo</li>
+        <li>Outline abu-abu tambahan pada efek (mis. tepi footer)</li>
+        <li>Gradasi warna-warni pada latar besar (footer satu warna)</li>
+        <li>Warna hex baru di luar token</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Career — EKSAD Technology</title>
+<meta name="description" content="Karier di EKSAD Technology: lihat peran yang tersedia dan kirim lamaran Anda lewat email.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&family=Red+Hat+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- gradien bersama ikon produk (gaya sama dengan ikon nilai: terang -> jenuh -> gelap) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <linearGradient id="pgBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9be6"/><stop offset=".55" stop-color="#1B5EAB"/><stop offset="1" stop-color="#0e3466"/></linearGradient>
+  <linearGradient id="pgRed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb37a"/><stop offset=".5" stop-color="#ff6a4d"/><stop offset="1" stop-color="#E8222E"/></linearGradient>
+  <linearGradient id="pgRedBar" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="215" y2="0"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#E8222E"/></linearGradient>
+  <linearGradient id="pgRedBarLight" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="215" y2="0"><stop offset="0" stop-color="#ffc09a"/><stop offset="1" stop-color="#F2606A"/></linearGradient>
+</defs></svg>
+
+<!-- =====================================================
+     1. HEADER — dua pil mengambang (gaya BCG)
+     Menu: layar penuh seperti BCG; animasi orchestrated GSAP
+     (buka = berkembang dari pil + back.out memantul, tutup = power2 halus & lebih cepat)
+     ===================================================== -->
+<header class="site-header" id="top">
+  <!-- Header gaya Nalar: bar transparan; saat scroll menyempit (1400→1040px), memendek (68→56px) & muncul latar kaca bulat -->
+  <div class="hdr" id="hdr">
+    <div class="hdr-inner" id="island">
+      <span class="hdr-bg" aria-hidden="true"></span>
+      <nav class="hdr-nav" aria-label="Utama">
+        <a href="#top" class="brand" aria-label="EKSAD Technology — Home">
+          <img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <button type="button" class="nav-link-btn" id="svcBtn" data-open-panel="industry" aria-expanded="false" aria-controls="svcDrop">Our Services
+              <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="career.html" class="is-active">Career</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="contact.html" class="nav-cta">Contact Us</a>
+          <button type="button" class="nav-burger" id="islandBtn" aria-expanded="false" aria-controls="menuPanel" aria-label="Buka menu">
+            <span class="i-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Dropdown Our Services (gaya demo GSAP "Orchestrated easeReverse") -->
+      <div class="svc-drop" id="svcDrop" hidden>
+        <div class="svc-inner">
+          <div class="svc-col">
+            <h4 class="svc-anim">Industry</h4>
+            <a class="svc-anim" href="services.html#automotive">Automotive <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Manufacturing <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Financial Service <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Logistics <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Public Service <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="svc-col">
+            <h4 class="svc-anim">Products</h4>
+            <a class="svc-anim" href="services.html#prodms"><b>ProDMS<small>Dealer Management System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#prohace"><b>Prohace<small>HCIS System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#procloud"><b>ProCloud<small>Multi Cloud System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#protalent"><b>Protalent<small>IT Resources</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#protect"><b>ProTect<small>Security System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#prosage"><b>ProSAGE<small>Data Analytic</small></b><span aria-hidden="true">→</span></a>
+          </div>
+          <div class="svc-col">
+            <h4 class="svc-anim">Services</h4>
+            <a class="svc-anim" href="#">SaaS <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Managed Services <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu layar penuh -->
+  <div class="mega" id="menuPanel" role="dialog" aria-modal="true" aria-label="Menu utama" hidden>
+    <div class="mega-top">
+      <button type="button" class="burger-btn mega-close" id="menuClose" aria-label="Tutup menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 3l16 16M19 3L3 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#top" class="brand m-anim"><img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology"></a>
+      <label class="mega-search m-anim">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="megaSearch" placeholder="Type to search" aria-label="Cari">
+      </label>
+      <a href="contact.html" class="contact-link m-anim">Contact Us</a>
+    </div>
+
+    <div class="mega-body">
+      <nav class="mega-left" aria-label="Utama">
+        <ul>
+          <li class="m-group m-anim"><a href="#top" class="m-top">Home</a></li>
+          <li class="m-group m-anim">
+            <span class="m-top">Our Services</span>
+            <ul class="m-sub">
+              <li><button type="button" class="m-tab is-active" data-panel="industry">Industry</button></li>
+              <li><button type="button" class="m-tab" data-panel="products">Products</button></li>
+              <li><button type="button" class="m-tab" data-panel="services">Services</button></li>
+            </ul>
+          </li>
+          <li class="m-group m-anim">
+            <span class="m-top">Blog</span>
+            <ul class="m-sub">
+              <li><button type="button" class="m-tab" data-panel="blog">Event &amp; Training</button></li>
+            </ul>
+          </li>
+          <li class="m-group m-anim"><a href="career.html" class="m-top">Career</a></li>
+          <li class="m-group m-anim"><a href="contact.html" class="m-top">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="mega-right">
+        <section class="m-panel is-active" data-panel="industry">
+          <header class="m-head"><h3>Industry</h3><p>Solusi teknologi yang dirancang untuk kebutuhan tiap industri.</p></header>
+          <ul class="m-links">
+            <li><a href="services.html#automotive">Automotive</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Financial Service</a></li>
+            <li><a href="#">Logistics</a></li>
+            <li><a href="#">Public Service</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="products">
+          <header class="m-head"><h3>Products</h3><p>Ekosistem produk Pro… by EKSAD untuk mempercepat bisnis Anda.</p></header>
+          <ul class="m-links">
+            <li><a href="services.html#prodms">ProDMS</a></li>
+            <li><a href="services.html#prohace">Prohace</a></li>
+            <li><a href="services.html#procloud">ProCloud</a></li>
+            <li><a href="services.html#protalent">Protalent</a></li>
+            <li><a href="services.html#protect">ProTect</a></li>
+            <li><a href="services.html#prosage">ProSAGE</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="services">
+          <header class="m-head"><h3>Services</h3><p>Model layanan yang fleksibel sesuai kebutuhan operasional Anda.</p></header>
+          <ul class="m-links">
+            <li><a href="#">SaaS</a></li>
+            <li><a href="#">Managed Services</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="blog">
+          <header class="m-head"><h3>Blog</h3><p>Kabar terbaru, event, dan program pelatihan dari EKSAD.</p></header>
+          <ul class="m-links">
+            <li><a href="blog.html#event">Event</a></li>
+            <li><a href="blog.html#training">Training</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- =====================================================
+     CAREER — satu file untuk menu Career. Struktur mengikuti Whitespace careers
+     (goocel.github.io/Whitespace-website/careers.html): hero 2 kolom (judul + subjudul + lead | visual),
+     Open Roles berlatar gelap (judul kiri, lead kanan, filter cari + level, tabel peran, empty state),
+     lalu "Don't see your role?", CTA, footer. Filter: main.js blok CAREER.
+     CATATAN: situs lama eksad.com/career belum punya lowongan ("Coming Soon").
+     Daftar peran di bawah adalah CONTOH (diambil dari spesialisasi Protalent) — ganti dengan lowongan asli dari HR.
+     ===================================================== -->
+<section class="page-hero car-hero" id="overview">
+  <div class="container car-hero-grid">
+    <div class="car-hero-copy">
+      <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Career</span></nav>
+      <h1 class="reveal">Welcome to Careers at EKSAD</h1>
+      <p class="lead reveal">Terlibat di proyek nyata sejak hari pertama dan berkembang bersama tim terbaik.</p>    </div>
+    <figure class="car-hero-fig reveal">
+      <img src="assets/img/about-value.jpg" alt="Tim EKSAD berdiskusi di ruang kerja">
+    </figure>
+  </div>
+</section>
+
+<section class="section car-roles" id="roles">
+  <div class="container">
+    <div class="car-head">
+      <h2 class="reveal">Open Roles. Real Impact</h2>
+      <p class="lead reveal">Kirim CV dan catatan singkat lewat email tentang alasan Anda tertarik dengan pekerjaan ini.</p>
+    </div>
+
+    <div class="car-table reveal" id="careerRoles">
+      <form class="car-filters" role="search" onsubmit="return false">
+        <label class="car-field"><span>Role</span><input type="search" name="q" placeholder="Search by role" autocomplete="off"></label>
+        <label class="car-field"><span>Level</span>
+          <select name="level">
+            <option value="">All levels</option>
+            <option>Experienced</option>
+            <option>Fresh Graduate</option>
+          </select>
+        </label>
+        <button type="reset" class="car-reset">Reset</button>
+        <p class="car-count" aria-live="polite"></p>
+      </form>
+
+      <table>
+        <thead><tr><th scope="col">Role</th><th scope="col">Level</th><th scope="col">What you'll do</th><th scope="col"><span class="sr-only">Apply</span></th></tr></thead>
+        <tbody>
+          <tr data-role>
+            <th scope="row" data-label="Role">Backend Developer</th>
+            <td data-label="Level"><span class="car-tag">Experienced</span></td>
+            <td data-label="What you'll do">Membangun dan memelihara layanan backend (Java, Golang, NodeJS) untuk ProDMS dan produk EKSAD lainnya.</td>
+            <td class="car-act"><a href="mailto:info@eksad.com?subject=Application%3A%20Backend%20Developer" class="btn btn-accent btn-sm">Apply <span class="arr" aria-hidden="true">→</span></a></td>
+          </tr>
+          <tr data-role>
+            <th scope="row" data-label="Role">Business Analyst</th>
+            <td data-label="Level"><span class="car-tag">Experienced</span></td>
+            <td data-label="What you'll do">Bekerja mandiri, menerjemahkan kebutuhan klien menjadi spesifikasi solusi, dan melapor langsung ke Project Leader serta klien.</td>
+            <td class="car-act"><a href="mailto:info@eksad.com?subject=Application%3A%20Business%20Analyst" class="btn btn-accent btn-sm">Apply <span class="arr" aria-hidden="true">→</span></a></td>
+          </tr>
+          <tr data-role>
+            <th scope="row" data-label="Role">Project Support Intern</th>
+            <td data-label="Level"><span class="car-tag">Fresh Graduate</span></td>
+            <td data-label="What you'll do">Membantu merencanakan, menjalankan, dan menyerahkan proyek tepat waktu, sesuai lingkup, dan sesuai anggaran.</td>
+            <td class="car-act"><a href="mailto:info@eksad.com?subject=Application%3A%20Project%20Support%20Intern" class="btn btn-accent btn-sm">Apply <span class="arr" aria-hidden="true">→</span></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="car-empty" hidden>Belum ada peran yang cocok. <a href="mailto:info@eksad.com?subject=Career%20Enquiry">Tetap kirim email ke kami.</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint car-open" id="open-application">
+  <div class="container car-head">
+    <h2 class="reveal">Don't See Your Role?</h2>
+    <div class="car-open-body">
+      <p class="lead reveal">Kalau cara kerja kami cocok dengan Anda, tetap kirim email. Ceritakan apa yang bisa Anda bawa ke tim EKSAD.</p>
+      <a href="mailto:info@eksad.com?subject=Career%20Enquiry" class="btn btn-primary reveal">Email Us <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     7. CTA — dark rounded banner
+     ===================================================== -->
+<section class="cta-stage" id="cta">
+  <!-- tumpukan bentuk EKSAD berbasis fisika (assets/js/cta-physics.js); kursor mendorong bentuk -->
+  <canvas class="cta-canvas" aria-hidden="true"></canvas>
+  <div class="cta-content">
+    <p class="cta-kicker">Siap mempercepat bisnis Anda?</p>
+    <h2 class="cta-title" aria-label="Let's Grow Together!"><span class="ln" aria-hidden="true">Let's Grow</span><span class="ln" aria-hidden="true">Together!</span></h2>
+    <a href="mailto:info@eksad.com" class="cta-btn">Hubungi Kami <span aria-hidden="true">●</span></a>
+  </div>
+</section>
+
+
+</main>
+
+<!-- =====================================================
+     8. FOOTER
+     ===================================================== -->
+<!-- Footer bounce: tepi atas melengkung mengikuti kecepatan scroll lalu memantul (GSAP ScrollTrigger) -->
+<footer class="site-footer" id="footer">
+  <svg class="f-wave" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="fGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset=".4" stop-color="#ffffff"/>
+        <stop offset=".75" stop-color="#ffffff"/>
+        <stop offset="1" stop-color="#ffffff"/>
+      </linearGradient>
+    </defs>
+    <path id="fWaveGap" d="M0 100 Q500 100 1000 100 Z" fill="#eef1f8"/>
+    <path id="fWavePath" d="M0 100 Q500 100 1000 100 L1000 200 L0 200 Z" fill="url(#fGrad)"/>
+  </svg>
+  <div class="container">
+    <div class="f-top">
+      <img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology" class="f-logo">
+      <p class="f-tag">Your partner in devising development blueprints and executing strategic solutions.</p>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-about">
+        <p>EKSAD is your partner in devising comprehensive development blueprints and executing strategic solutions, poised to conquer both business complexities and technological hurdles.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li><small>Call Us (8/5)</small><a href="tel:+622157958040">(021) 57958040</a></li>
+          <li><small>Email</small><a href="mailto:info@eksad.com">info@eksad.com</a></li>
+          <li><small>Alamat</small>The East Tower 19th Floor, Mega Kuningan, Jakarta Selatan, Indonesia 12950</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="services.html#prodms">ProDMS</a></li>
+          <li><a href="services.html#prohace">Prohace</a></li>
+          <li><a href="services.html#protalent">Protalent</a></li>
+          <li><a href="services.html#procloud">ProCloud</a></li>
+          <li><a href="services.html#protect">ProTect</a></li>
+          <li><a href="services.html#prosage">ProSAGE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="blog.html#event">Event</a></li>
+          <li><a href="blog.html#training">Training</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f-legal">
+      <p>© 2026 PT Tiga Daya Digital Indonesia. All rights reserved.</p>
+      <a href="#top" class="u-link">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="assets/js/cta-physics.js"></script>
+</body>
+</html>
+

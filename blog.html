@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — EKSAD Technology</title>
+<meta name="description" content="Blog EKSAD Technology: kabar terbaru, event, dan program pelatihan dari tim EKSAD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&family=Red+Hat+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- gradien bersama ikon produk (gaya sama dengan ikon nilai: terang -> jenuh -> gelap) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <linearGradient id="pgBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9be6"/><stop offset=".55" stop-color="#1B5EAB"/><stop offset="1" stop-color="#0e3466"/></linearGradient>
+  <linearGradient id="pgRed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb37a"/><stop offset=".5" stop-color="#ff6a4d"/><stop offset="1" stop-color="#E8222E"/></linearGradient>
+  <linearGradient id="pgRedBar" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="215" y2="0"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#E8222E"/></linearGradient>
+  <linearGradient id="pgRedBarLight" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="215" y2="0"><stop offset="0" stop-color="#ffc09a"/><stop offset="1" stop-color="#F2606A"/></linearGradient>
+</defs></svg>
+
+<!-- =====================================================
+     1. HEADER — dua pil mengambang (gaya BCG)
+     Menu: layar penuh seperti BCG; animasi orchestrated GSAP
+     (buka = berkembang dari pil + back.out memantul, tutup = power2 halus & lebih cepat)
+     ===================================================== -->
+<header class="site-header" id="top">
+  <!-- Header gaya Nalar: bar transparan; saat scroll menyempit (1400→1040px), memendek (68→56px) & muncul latar kaca bulat -->
+  <div class="hdr" id="hdr">
+    <div class="hdr-inner" id="island">
+      <span class="hdr-bg" aria-hidden="true"></span>
+      <nav class="hdr-nav" aria-label="Utama">
+        <a href="#top" class="brand" aria-label="EKSAD Technology — Home">
+          <img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <button type="button" class="nav-link-btn" id="svcBtn" data-open-panel="industry" aria-expanded="false" aria-controls="svcDrop">Our Services
+              <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+          </li>
+          <li><a href="blog.html" class="is-active">Blog</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="contact.html" class="nav-cta">Contact Us</a>
+          <button type="button" class="nav-burger" id="islandBtn" aria-expanded="false" aria-controls="menuPanel" aria-label="Buka menu">
+            <span class="i-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Dropdown Our Services (gaya demo GSAP "Orchestrated easeReverse") -->
+      <div class="svc-drop" id="svcDrop" hidden>
+        <div class="svc-inner">
+          <div class="svc-col">
+            <h4 class="svc-anim">Industry</h4>
+            <a class="svc-anim" href="services.html#automotive">Automotive <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Manufacturing <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Financial Service <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Logistics <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Public Service <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="svc-col">
+            <h4 class="svc-anim">Products</h4>
+            <a class="svc-anim" href="services.html#prodms"><b>ProDMS<small>Dealer Management System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#prohace"><b>Prohace<small>HCIS System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#procloud"><b>ProCloud<small>Multi Cloud System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#protalent"><b>Protalent<small>IT Resources</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#protect"><b>ProTect<small>Security System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#prosage"><b>ProSAGE<small>Data Analytic</small></b><span aria-hidden="true">→</span></a>
+          </div>
+          <div class="svc-col">
+            <h4 class="svc-anim">Services</h4>
+            <a class="svc-anim" href="#">SaaS <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Managed Services <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu layar penuh -->
+  <div class="mega" id="menuPanel" role="dialog" aria-modal="true" aria-label="Menu utama" hidden>
+    <div class="mega-top">
+      <button type="button" class="burger-btn mega-close" id="menuClose" aria-label="Tutup menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 3l16 16M19 3L3 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#top" class="brand m-anim"><img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology"></a>
+      <label class="mega-search m-anim">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="megaSearch" placeholder="Type to search" aria-label="Cari">
+      </label>
+      <a href="contact.html" class="contact-link m-anim">Contact Us</a>
+    </div>
+
+    <div class="mega-body">
+      <nav class="mega-left" aria-label="Utama">
+        <ul>
+          <li class="m-group m-anim"><a href="#top" class="m-top">Home</a></li>
+          <li class="m-group m-anim">
+            <span class="m-top">Our Services</span>
+            <ul class="m-sub">
+              <li><button type="button" class="m-tab is-active" data-panel="industry">Industry</button></li>
+              <li><button type="button" class="m-tab" data-panel="products">Products</button></li>
+              <li><button type="button" class="m-tab" data-panel="services">Services</button></li>
+            </ul>
+          </li>
+          <li class="m-group m-anim">
+            <span class="m-top">Blog</span>
+            <ul class="m-sub">
+              <li><button type="button" class="m-tab" data-panel="blog">Event &amp; Training</button></li>
+            </ul>
+          </li>
+          <li class="m-group m-anim"><a href="career.html" class="m-top">Career</a></li>
+          <li class="m-group m-anim"><a href="contact.html" class="m-top">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="mega-right">
+        <section class="m-panel is-active" data-panel="industry">
+          <header class="m-head"><h3>Industry</h3><p>Solusi teknologi yang dirancang untuk kebutuhan tiap industri.</p></header>
+          <ul class="m-links">
+            <li><a href="services.html#automotive">Automotive</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Financial Service</a></li>
+            <li><a href="#">Logistics</a></li>
+            <li><a href="#">Public Service</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="products">
+          <header class="m-head"><h3>Products</h3><p>Ekosistem produk Pro… by EKSAD untuk mempercepat bisnis Anda.</p></header>
+          <ul class="m-links">
+            <li><a href="services.html#prodms">ProDMS</a></li>
+            <li><a href="services.html#prohace">Prohace</a></li>
+            <li><a href="services.html#procloud">ProCloud</a></li>
+            <li><a href="services.html#protalent">Protalent</a></li>
+            <li><a href="services.html#protect">ProTect</a></li>
+            <li><a href="services.html#prosage">ProSAGE</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="services">
+          <header class="m-head"><h3>Services</h3><p>Model layanan yang fleksibel sesuai kebutuhan operasional Anda.</p></header>
+          <ul class="m-links">
+            <li><a href="#">SaaS</a></li>
+            <li><a href="#">Managed Services</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="blog">
+          <header class="m-head"><h3>Blog</h3><p>Kabar terbaru, event, dan program pelatihan dari EKSAD.</p></header>
+          <ul class="m-links">
+            <li><a href="blog.html#event">Event</a></li>
+            <li><a href="blog.html#training">Training</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- =====================================================
+     BLOG — satu file untuk menu Blog. Gaya daftar artikel BCG ("Our Latest Thinking"):
+     grid 4 kolom, kolom 1 & 3 turun 60px, kartu foto 3:4 + chip kategori + panel kaca (hover: kutipan + Read More).
+     Filter kategori (main.js: BLOG), bisa lewat hash: blog.html#event / #training / #technology.
+     Data & kutipan asli dari eksad.com/blog-list dan /category/; kartu sementara menuju artikel asli di eksad.com.
+     ===================================================== -->
+<div class="svc-page" id="list" data-title="Blog — EKSAD Technology">
+<section class="page-hero blog-hero" id="overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Blog</span></nav>
+    <h1 class="reveal">News, Events, and Learning</h1>
+    <p class="lead reveal">Kabar terbaru dari EKSAD: event yang kami selenggarakan, pelatihan untuk tim, dan pencapaian yang kami raih bersama.</p>
+  </div>
+</section>
+
+<section class="section blog-list" id="articles">
+  <div class="container">
+    <div class="bl-bar reveal">
+    <div class="bl-filter" role="group" aria-label="Filter kategori">
+      <button type="button" class="is-active" data-cat="all" aria-pressed="true">All <small>18</small></button>
+      <button type="button" data-cat="event" aria-pressed="false">Event <small>8</small></button>
+      <button type="button" data-cat="training" aria-pressed="false">Training <small>5</small></button>
+      <button type="button" data-cat="technology" aria-pressed="false">Technology <small>5</small></button>
+    </div>
+    <label class="bl-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="blogSearch" placeholder="Search articles" aria-label="Cari artikel" autocomplete="off">
+    </label>
+    </div>
+    <div class="bl-grid" id="blogGrid">
+      <a href="#coretax" class="ex-card bl-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/coretax.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>March 6, 2026</span>
+          <strong class="c-title">Sharing Session: Introduction to SPT Reporting through Coretax</strong>
+          <span class="c-more"><span class="c-desc">On March 5, 2026, EKSAD Technology held a sharing session titled “Introduction to SPT Reporting through Coretax” at the EKSAD office.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#risk-workshop" class="ex-card bl-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/risk.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>January 22, 2026</span>
+          <strong class="c-title">Workshop Risk Management EKSAD Technology</strong>
+          <span class="c-more"><span class="c-desc">On Wednesday, January 21, 2026, EKSAD Technology once again held an Internal Risk Management Workshop as part of the company’s ongoing commitment to strengthening corporate governance.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#alibaba-ai-training" class="ex-card bl-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/alibaba.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 25, 2025</span>
+          <strong class="c-title">AI Training with Alibaba</strong>
+          <span class="c-more"><span class="c-desc">To address Adira’s needs regarding AI and explore its applications in the financial industry, Eksad collaborated with Alibaba to conduct a half-day deep dive AI training.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/21/maganghub-batch-i-interns-officially-join-eksad/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/maganghub.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 21, 2025</span>
+          <strong class="c-title">Maganghub Batch I Interns Officially Join EKSAD</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/19/eksad-attends-the-20th-triputra-improvement-forum-tif-xx/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/tif-attend.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 19, 2025</span>
+          <strong class="c-title">EKSAD Attends the 20th Triputra Improvement Forum (TIF XX)</strong>
+          <span class="c-more"><span class="c-desc">On Saturday, October 18, 2025, Eksad Technology took part in the 20th Triputra Improvement Forum (TIF XX), an annual agenda of the Triputra Group.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/16/eksad-empowers-it-leaders-in-strategic-vmware-exit-with-aws-cloud-migration/" class="ex-card bl-card c-photo reveal" data-cat="technology" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/vmware.jpg" alt="" loading="lazy">
+        <span class="c-tag">Technology</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 16, 2025</span>
+          <strong class="c-title">EKSAD Empowers IT Leaders in Strategic VMWare Exit with AWS Cloud Migration</strong>
+          <span class="c-more"><span class="c-desc">Cibitung, October 15, 2025 — Eksad Technology arranged an exclusive event to help IT leaders navigate a smooth and strategic VMWare Exit, moving towards a more scalable cloud.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/11/eksad-holds-planning-cycle-in-puncak-grow-in-the-speed-of-a-rocket-ship/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/planning.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 11, 2025</span>
+          <strong class="c-title">EKSAD Holds Planning Cycle in Puncak: Grow in Speed of Rocket Ship</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/03/financial-management-sharing-session-with-mr-jhon/" class="ex-card bl-card c-photo reveal" data-cat="training" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/finance.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 3, 2025</span>
+          <strong class="c-title">Financial Management Sharing Session with Mr. Jhon</strong>
+          <span class="c-more"><span class="c-desc">On Thursday, October 2nd, 2025, EKSAD Technology held an insightful internal Sharing Session with Mr. Yohanes Suatan, more affectionately known as Pak Jhon.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/08/20/semarak-hut-ri-ke-80-bareng-eksad/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/hut-ri.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>August 20, 2025</span>
+          <strong class="c-title">Celebrate the 80th Anniversary of the Republic of Indonesia with EKSAD!</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/08/16/triputra-improvement-forum-xx-tif-xx/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/tif.jpg" alt="" loading="lazy" style="object-position:28% 50%">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>August 16, 2025</span>
+          <strong class="c-title">Triputra Improvement Forum XX (TIF XX)</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/08/01/workshop-amazon-q/" class="ex-card bl-card c-photo reveal" data-cat="technology" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/amazon-q.jpg" alt="" loading="lazy">
+        <span class="c-tag">Technology</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>August 1, 2025</span>
+          <strong class="c-title">Workshop Amazon Q</strong>
+          <span class="c-more"><span class="c-desc">On Thursday, July 31, 2025, EKSAD Technology, in collaboration with Amazon Web Services (AWS), successfully held the Amazon Q (AWS) Workshop at Habitate Restaurant, Glasshouse, Kuningan, Jakarta.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/06/17/eksad-technology-has-officially-achieved-iso-iec-270012022/" class="ex-card bl-card c-photo reveal" data-cat="technology" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/iso.jpg" alt="" loading="lazy">
+        <span class="c-tag">Technology</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>June 17, 2025</span>
+          <strong class="c-title">EKSAD Technology Has Officially Achieved ISO/IEC 27001:2022</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/06/15/jps-2025-realizing-strategic-it-synergy-of-triputra-group-in-the-era-of-ai-and-cybersecurity/" class="ex-card bl-card c-photo reveal" data-cat="technology" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/jps.jpg" alt="" loading="lazy">
+        <span class="c-tag">Technology</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>June 15, 2025</span>
+          <strong class="c-title">JPS 2025: Realizing Strategic IT Synergy of Triputra Group in the Era of AI and Cybersecurity</strong>
+          <span class="c-more"><span class="c-desc">From June 11 to 13, 2025, the Joint Planning Session (JPS) 2025 was successfully held in Bali. This event served as a strategic forum for IT leaders.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/05/22/empowering-digital-transformation-through-adaptive-technology-eksad-technology-and-whatap-seminar/" class="ex-card bl-card c-photo reveal" data-cat="technology" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/whatap.jpg" alt="" loading="lazy">
+        <span class="c-tag">Technology</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>May 22, 2025</span>
+          <strong class="c-title">Empowering Digital Transformation Through Adaptive Technology: EKSAD Technology and WhaTap Seminar</strong>
+          <span class="c-more"><span class="c-desc">On May 21, 2025, EKSAD Technology collaborated with WhaTap to host a seminar titled “Empowering Digital Transformation Through Adaptive Technology”.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/05/20/kick-off-meeting-and-adventure-eksad-2025-catch-your-dream/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/kickoff.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>May 20, 2025</span>
+          <strong class="c-title">Kick-Off Meeting and Adventure EKSAD 2025: Catch Your Dream</strong>
+          <span class="c-more"><span class="c-desc">On January 17, 2025, EKSAD held the Kick-Off Meeting and Adventure EKSAD 2025 event with the theme Catch Your Dream.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/04/30/birthday-our-ceo/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/birthday.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>April 30, 2025</span>
+          <strong class="c-title">Birthday Our CEO</strong>
+          <span class="c-more"><span class="c-desc">Good Morning EKSADians! Yesterday, we just celebrated a special moment with two amazing figures at EKSAD! There were so many meaningful messages, exciting stories, and of course… delicious food.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/03/15/eksad-7th-anniversary/" class="ex-card bl-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/anniversary.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>March 15, 2025</span>
+          <strong class="c-title">EKSAD 7th Anniversary</strong>
+          <span class="c-more"><span class="c-desc">On March 14, 2025, EKSAD Technology celebrated its 7th anniversary with a Potluck and Iftar event themed Arabian Night.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/02/27/managerialship-training-2025/" class="ex-card bl-card c-photo reveal" data-cat="training" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/managerial.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>February 27, 2025</span>
+          <strong class="c-title">Managerialship Training 2025</strong>
+          <span class="c-more"><span class="c-desc">Great Leadership Starts with Continuous Learning! The success of EKSAD’s Managerialship Training on 26th-27th February 2025 proves that leadership development is a continuous journey.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+    <p class="bl-empty" id="blogEmpty" hidden>No articles found. Try another keyword or category.</p>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### ARTIKEL: coretax (teks asli eksad.com) -->
+<div class="svc-page" id="coretax" data-title="Sharing Session: Introduction to SPT Reporting through Coretax — EKSAD Blog" hidden>
+<article class="art">
+  <header class="art-hero">
+    <div class="container">
+      <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="#list">Blog</a><span aria-hidden="true">/</span><span>Training</span></nav>
+      <div class="art-meta reveal"><span class="art-tag">Training</span><b>Article</b><span>March 6, 2026</span></div>
+      <h1 class="reveal">Sharing Session: Introduction to SPT Reporting through Coretax</h1>
+    </div>
+    <div class="container"><figure class="art-cover reveal"><img src="assets/img/blog/article/coretax-1.jpg" alt="Poster sharing session Sosialisasi Pelaporan SPT melalui Coretax bersama Kevin Utario"></figure></div>
+  </header>
+  <div class="container art-layout">
+    <aside class="art-aside reveal">
+      <dl>
+        <div><dt>Published</dt><dd>March 6, 2026</dd></div>
+        <div><dt>Categories</dt><dd class="art-cats"><a href="#training">Training</a></dd></div>
+      </dl>
+      <a href="#list" class="u-link">← Back to Blog</a>
+    </aside>
+    <div class="art-body reveal">
+        <p class="art-lede">On <strong>March 5, 2026</strong>, EKSAD Technology held a sharing session titled <strong>“Introduction to SPT Reporting through Coretax”</strong> at the EKSAD office. The purpose of this session was to provide EKSADians with a better understanding of the latest tax reporting system through the Coretax platform.</p>
+        <p>In this session, <strong>Kevin Utario</strong>, an EKSADian, shared insights about the latest tax reporting process as well as important aspects that need to be considered when using the Coretax system. The sharing session lasted for approximately <strong>one and a half hours</strong> and was attended enthusiastically by the EKSADians.</p>
+        <div class="art-gallery"><figure class="art-fig"><img src="assets/img/blog/article/coretax-2.jpg" alt="Kevin Utario memaparkan materi pelaporan SPT melalui Coretax" loading="lazy"></figure><figure class="art-fig"><img src="assets/img/blog/article/coretax-3.jpg" alt="Peserta mengikuti sharing session di kantor EKSAD" loading="lazy"></figure></div>
+        <p>In addition to the presentation, the event became even more engaging through an <strong>active and interactive Q&amp;A session</strong>. Participants enthusiastically raised various questions regarding SPT reporting through Coretax, creating a lively discussion filled with valuable insights. This interaction provided an opportunity for EKSADians to deepen their understanding while also sharing experiences related to the current tax reporting process.</p>
+        <p>Through this activity, it is hoped that all <strong>EKSADians will gain a better understanding of the tax reporting process through Coretax</strong>, enabling them to submit their SPT reports more easily, accurately, and in accordance with the applicable regulations.</p>
+        <figure class="art-fig art-fig-wide"><img src="assets/img/blog/article/coretax-4.jpg" alt="Suasana sesi tanya jawab bersama para EKSADian" loading="lazy"></figure>
+    </div>
+  </div>
+</article>
+
+<section class="section section-tint" id="coretax-more">
+  <div class="container">
+    <div class="sec-intro reveal"><h2>More from the Blog</h2></div>
+    <div class="bcg-explore">
+      <a href="#risk-workshop" class="ex-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/risk.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>January 22, 2026</span>
+          <strong class="c-title">Workshop Risk Management EKSAD Technology</strong>
+          <span class="c-more"><span class="c-desc">On Wednesday, January 21, 2026, EKSAD Technology once again held an Internal Risk Management Workshop as part of the company’s ongoing commitment to strengthening corporate governance.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#alibaba-ai-training" class="ex-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/alibaba.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 25, 2025</span>
+          <strong class="c-title">AI Training with Alibaba</strong>
+          <span class="c-more"><span class="c-desc">To address Adira’s needs regarding AI and explore its applications in the financial industry, Eksad collaborated with Alibaba to conduct a half-day deep dive AI training.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/21/maganghub-batch-i-interns-officially-join-eksad/" class="ex-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/maganghub.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 21, 2025</span>
+          <strong class="c-title">Maganghub Batch I Interns Officially Join EKSAD</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ##################################################### ARTIKEL: risk-workshop (teks asli eksad.com) -->
+<div class="svc-page" id="risk-workshop" data-title="Workshop Risk Management EKSAD Technology — EKSAD Blog" hidden>
+<article class="art">
+  <header class="art-hero">
+    <div class="container">
+      <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="#list">Blog</a><span aria-hidden="true">/</span><span>Training</span></nav>
+      <div class="art-meta reveal"><span class="art-tag">Training</span><b>Article</b><span>January 22, 2026</span></div>
+      <h1 class="reveal">Workshop Risk Management EKSAD Technology</h1>
+    </div>
+    <div class="container"><figure class="art-cover reveal"><img src="assets/img/blog/article/risk-1.jpg" alt="David Aaron dari divisi PMO memaparkan materi risk management di depan peserta"></figure></div>
+  </header>
+  <div class="container art-layout">
+    <aside class="art-aside reveal">
+      <dl>
+        <div><dt>Published</dt><dd>January 22, 2026</dd></div>
+        <div><dt>Categories</dt><dd class="art-cats"><a href="#training">Training</a></dd></div>
+      </dl>
+      <a href="#list" class="u-link">← Back to Blog</a>
+    </aside>
+    <div class="art-body reveal">
+        <p class="art-lede">On Wednesday, January 21, 2026, EKSAD Technology once again held an Internal Risk Management Workshop as part of the company’s ongoing commitment to strengthening corporate governance, risk mitigation, and improving the quality of decision-making across all levels of the organization.</p>
+        <p>The workshop was presented by David Aaron, representing the Project Management Office (PMO) Division. During the session, participants gained a comprehensive understanding of risk management, covering both fundamental concepts and practical implementation tailored to the business and operational needs of EKSAD Technology.</p>
+        <p>Throughout the workshop, participants were not only provided with theoretical knowledge but were also actively engaged in hands-on practice, including the development and identification of risk management plans for their respective products and divisions. This approach aimed to enable participants to identify potential risks, assess their impact levels, and design appropriate and measurable mitigation strategies aligned with their specific work contexts.</p>
+        <div class="art-gallery"><figure class="art-fig"><img src="assets/img/blog/article/risk-2.jpg" alt="Peserta menyimak materi workshop di ruang rapat" loading="lazy"></figure><figure class="art-fig"><img src="assets/img/blog/article/risk-3.jpg" alt="Peserta menyusun rencana risk management untuk produk dan divisinya" loading="lazy"></figure></div>
+        <p>The workshop, which ran from morning until afternoon, was conducted in an interactive and productive manner. Two-way discussions between the presenter and participants fostered the exchange of insights, case studies, and more practical perspectives on applying risk management in daily work activities.</p>
+        <p>Through this initiative, EKSAD Technology hopes that all team members will develop stronger risk awareness and be able to integrate risk management principles into their work processes, product development, and strategic decision-making. Moving forward, the consistent application of risk management is expected to support business sustainability, enhance service reliability, and maintain stakeholder trust.</p>
+    </div>
+  </div>
+</article>
+
+<section class="section section-tint" id="risk-workshop-more">
+  <div class="container">
+    <div class="sec-intro reveal"><h2>More from the Blog</h2></div>
+    <div class="bcg-explore">
+      <a href="#coretax" class="ex-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/coretax.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>March 6, 2026</span>
+          <strong class="c-title">Sharing Session: Introduction to SPT Reporting through Coretax</strong>
+          <span class="c-more"><span class="c-desc">On March 5, 2026, EKSAD Technology held a sharing session titled “Introduction to SPT Reporting through Coretax” at the EKSAD office.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#alibaba-ai-training" class="ex-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/alibaba.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 25, 2025</span>
+          <strong class="c-title">AI Training with Alibaba</strong>
+          <span class="c-more"><span class="c-desc">To address Adira’s needs regarding AI and explore its applications in the financial industry, Eksad collaborated with Alibaba to conduct a half-day deep dive AI training.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/21/maganghub-batch-i-interns-officially-join-eksad/" class="ex-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/maganghub.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 21, 2025</span>
+          <strong class="c-title">Maganghub Batch I Interns Officially Join EKSAD</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ##################################################### ARTIKEL: alibaba-ai-training (teks asli eksad.com) -->
+<div class="svc-page" id="alibaba-ai-training" data-title="AI Training with Alibaba — EKSAD Blog" hidden>
+<article class="art">
+  <header class="art-hero">
+    <div class="container">
+      <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="#list">Blog</a><span aria-hidden="true">/</span><span>Training</span></nav>
+      <div class="art-meta reveal"><span class="art-tag">Training</span><b>Article</b><span>October 25, 2025</span></div>
+      <h1 class="reveal">AI Training with Alibaba</h1>
+    </div>
+    <div class="container"><figure class="art-cover reveal"><img src="assets/img/blog/article/alibaba-1.jpg" alt="Foto bersama peserta AI training EKSAD, Alibaba, dan Adira Finance"></figure></div>
+  </header>
+  <div class="container art-layout">
+    <aside class="art-aside reveal">
+      <dl>
+        <div><dt>Published</dt><dd>October 25, 2025</dd></div>
+        <div><dt>Categories</dt><dd class="art-cats"><a href="#training">Training</a></dd></div>
+      </dl>
+      <a href="#list" class="u-link">← Back to Blog</a>
+    </aside>
+    <div class="art-body reveal">
+        <p class="art-lede">To address Adira’s needs regarding AI and explore its applications in the financial industry, Eksad collaborated with Alibaba to conduct a half-day deep dive AI training. The session covered features, use cases, best practices, and a light AI and data exploration workshop.</p>
+        <p>The training was held on October 24, 2025, and was attended by executives and directors from Adira Finance, including representatives from the IT, Operations, Development, System Architecture, and Infrastructure divisions.</p>
+        <div class="art-gallery"><figure class="art-fig"><img src="assets/img/blog/article/alibaba-2.jpg" alt="Peserta dari Adira Finance mengikuti sesi AI training" loading="lazy"></figure><figure class="art-fig"><img src="assets/img/blog/article/alibaba-3.jpg" alt="Pemateri Alibaba Cloud membawakan sesi Navigating the AI Technology Landscape" loading="lazy"></figure></div>
+    </div>
+  </div>
+</article>
+
+<section class="section section-tint" id="alibaba-ai-training-more">
+  <div class="container">
+    <div class="sec-intro reveal"><h2>More from the Blog</h2></div>
+    <div class="bcg-explore">
+      <a href="#coretax" class="ex-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/coretax.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>March 6, 2026</span>
+          <strong class="c-title">Sharing Session: Introduction to SPT Reporting through Coretax</strong>
+          <span class="c-more"><span class="c-desc">On March 5, 2026, EKSAD Technology held a sharing session titled “Introduction to SPT Reporting through Coretax” at the EKSAD office.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="#risk-workshop" class="ex-card c-photo reveal" data-cat="training">
+        <img class="c-img" src="assets/img/blog/risk.jpg" alt="" loading="lazy">
+        <span class="c-tag">Training</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>January 22, 2026</span>
+          <strong class="c-title">Workshop Risk Management EKSAD Technology</strong>
+          <span class="c-more"><span class="c-desc">On Wednesday, January 21, 2026, EKSAD Technology once again held an Internal Risk Management Workshop as part of the company’s ongoing commitment to strengthening corporate governance.</span></span>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="https://eksad.com/2025/10/21/maganghub-batch-i-interns-officially-join-eksad/" class="ex-card c-photo reveal" data-cat="event" target="_blank" rel="noopener">
+        <img class="c-img" src="assets/img/blog/maganghub.jpg" alt="" loading="lazy">
+        <span class="c-tag">Event</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Article</b>October 21, 2025</span>
+          <strong class="c-title">Maganghub Batch I Interns Officially Join EKSAD</strong>
+          <span class="c-btn">Read More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- =====================================================
+     7. CTA — dark rounded banner
+     ===================================================== -->
+<section class="cta-stage" id="cta">
+  <!-- tumpukan bentuk EKSAD berbasis fisika (assets/js/cta-physics.js); kursor mendorong bentuk -->
+  <canvas class="cta-canvas" aria-hidden="true"></canvas>
+  <div class="cta-content">
+    <p class="cta-kicker">Siap mempercepat bisnis Anda?</p>
+    <h2 class="cta-title" aria-label="Let's Grow Together!"><span class="ln" aria-hidden="true">Let's Grow</span><span class="ln" aria-hidden="true">Together!</span></h2>
+    <a href="mailto:info@eksad.com" class="cta-btn">Hubungi Kami <span aria-hidden="true">●</span></a>
+  </div>
+</section>
+
+
+</main>
+
+<!-- =====================================================
+     8. FOOTER
+     ===================================================== -->
+<!-- Footer bounce: tepi atas melengkung mengikuti kecepatan scroll lalu memantul (GSAP ScrollTrigger) -->
+<footer class="site-footer" id="footer">
+  <svg class="f-wave" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="fGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset=".4" stop-color="#ffffff"/>
+        <stop offset=".75" stop-color="#ffffff"/>
+        <stop offset="1" stop-color="#ffffff"/>
+      </linearGradient>
+    </defs>
+    <path id="fWaveGap" d="M0 100 Q500 100 1000 100 Z" fill="#eef1f8"/>
+    <path id="fWavePath" d="M0 100 Q500 100 1000 100 L1000 200 L0 200 Z" fill="url(#fGrad)"/>
+  </svg>
+  <div class="container">
+    <div class="f-top">
+      <img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology" class="f-logo">
+      <p class="f-tag">Your partner in devising development blueprints and executing strategic solutions.</p>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-about">
+        <p>EKSAD is your partner in devising comprehensive development blueprints and executing strategic solutions, poised to conquer both business complexities and technological hurdles.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li><small>Call Us (8/5)</small><a href="tel:+622157958040">(021) 57958040</a></li>
+          <li><small>Email</small><a href="mailto:info@eksad.com">info@eksad.com</a></li>
+          <li><small>Alamat</small>The East Tower 19th Floor, Mega Kuningan, Jakarta Selatan, Indonesia 12950</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="services.html#prodms">ProDMS</a></li>
+          <li><a href="services.html#prohace">Prohace</a></li>
+          <li><a href="services.html#protalent">Protalent</a></li>
+          <li><a href="services.html#procloud">ProCloud</a></li>
+          <li><a href="services.html#protect">ProTect</a></li>
+          <li><a href="services.html#prosage">ProSAGE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="blog.html#event">Event</a></li>
+          <li><a href="blog.html#training">Training</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f-legal">
+      <p>© 2026 PT Tiga Daya Digital Indonesia. All rights reserved.</p>
+      <a href="#top" class="u-link">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="assets/js/cta-physics.js"></script>
+</body>
+</html>

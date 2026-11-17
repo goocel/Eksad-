@@ -1,0 +1,10 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# file tes sementara
+_t*.html
+
+# worktree sesi Claude Code paralel
+.claude/worktrees/

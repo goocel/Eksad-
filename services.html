@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Services — EKSAD Technology</title>
+<meta name="description" content="Layanan EKSAD Technology: solusi industri otomotif dan produk ProDMS, Prohace, ProCloud, Protalent, ProTect, dan ProSAGE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&family=Red+Hat+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- gradien bersama ikon produk (gaya sama dengan ikon nilai: terang -> jenuh -> gelap) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <linearGradient id="pgBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9be6"/><stop offset=".55" stop-color="#1B5EAB"/><stop offset="1" stop-color="#0e3466"/></linearGradient>
+  <linearGradient id="pgRed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb37a"/><stop offset=".5" stop-color="#ff6a4d"/><stop offset="1" stop-color="#E8222E"/></linearGradient>
+  <linearGradient id="pgRedBar" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="215" y2="0"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#E8222E"/></linearGradient>
+  <linearGradient id="pgRedBarLight" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="215" y2="0"><stop offset="0" stop-color="#ffc09a"/><stop offset="1" stop-color="#F2606A"/></linearGradient>
+</defs></svg>
+
+<!-- =====================================================
+     1. HEADER — dua pil mengambang (gaya BCG)
+     Menu: layar penuh seperti BCG; animasi orchestrated GSAP
+     (buka = berkembang dari pil + back.out memantul, tutup = power2 halus & lebih cepat)
+     ===================================================== -->
+<header class="site-header" id="top">
+  <!-- Header gaya Nalar: bar transparan; saat scroll menyempit (1400→1040px), memendek (68→56px) & muncul latar kaca bulat -->
+  <div class="hdr" id="hdr">
+    <div class="hdr-inner" id="island">
+      <span class="hdr-bg" aria-hidden="true"></span>
+      <nav class="hdr-nav" aria-label="Utama">
+        <a href="#top" class="brand" aria-label="EKSAD Technology — Home">
+          <img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <button type="button" class="nav-link-btn is-active" id="svcBtn" data-open-panel="industry" aria-expanded="false" aria-controls="svcDrop">Our Services
+              <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="contact.html" class="nav-cta">Contact Us</a>
+          <button type="button" class="nav-burger" id="islandBtn" aria-expanded="false" aria-controls="menuPanel" aria-label="Buka menu">
+            <span class="i-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Dropdown Our Services (gaya demo GSAP "Orchestrated easeReverse") -->
+      <div class="svc-drop" id="svcDrop" hidden>
+        <div class="svc-inner">
+          <div class="svc-col">
+            <h4 class="svc-anim">Industry</h4>
+            <a class="svc-anim" href="services.html#automotive">Automotive <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Manufacturing <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Financial Service <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Logistics <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Public Service <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="svc-col">
+            <h4 class="svc-anim">Products</h4>
+            <a class="svc-anim" href="services.html#prodms"><b>ProDMS<small>Dealer Management System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#prohace"><b>Prohace<small>HCIS System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#procloud"><b>ProCloud<small>Multi Cloud System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#protalent"><b>Protalent<small>IT Resources</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#protect"><b>ProTect<small>Security System</small></b><span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="services.html#prosage"><b>ProSAGE<small>Data Analytic</small></b><span aria-hidden="true">→</span></a>
+          </div>
+          <div class="svc-col">
+            <h4 class="svc-anim">Services</h4>
+            <a class="svc-anim" href="#">SaaS <span aria-hidden="true">→</span></a>
+            <a class="svc-anim" href="#">Managed Services <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu layar penuh -->
+  <div class="mega" id="menuPanel" role="dialog" aria-modal="true" aria-label="Menu utama" hidden>
+    <div class="mega-top">
+      <button type="button" class="burger-btn mega-close" id="menuClose" aria-label="Tutup menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 3l16 16M19 3L3 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#top" class="brand m-anim"><img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology"></a>
+      <label class="mega-search m-anim">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="megaSearch" placeholder="Type to search" aria-label="Cari">
+      </label>
+      <a href="contact.html" class="contact-link m-anim">Contact Us</a>
+    </div>
+
+    <div class="mega-body">
+      <nav class="mega-left" aria-label="Utama">
+        <ul>
+          <li class="m-group m-anim"><a href="#top" class="m-top">Home</a></li>
+          <li class="m-group m-anim">
+            <span class="m-top">Our Services</span>
+            <ul class="m-sub">
+              <li><button type="button" class="m-tab is-active" data-panel="industry">Industry</button></li>
+              <li><button type="button" class="m-tab" data-panel="products">Products</button></li>
+              <li><button type="button" class="m-tab" data-panel="services">Services</button></li>
+            </ul>
+          </li>
+          <li class="m-group m-anim">
+            <span class="m-top">Blog</span>
+            <ul class="m-sub">
+              <li><button type="button" class="m-tab" data-panel="blog">Event &amp; Training</button></li>
+            </ul>
+          </li>
+          <li class="m-group m-anim"><a href="career.html" class="m-top">Career</a></li>
+          <li class="m-group m-anim"><a href="contact.html" class="m-top">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="mega-right">
+        <section class="m-panel is-active" data-panel="industry">
+          <header class="m-head"><h3>Industry</h3><p>Solusi teknologi yang dirancang untuk kebutuhan tiap industri.</p></header>
+          <ul class="m-links">
+            <li><a href="services.html#automotive">Automotive</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Financial Service</a></li>
+            <li><a href="#">Logistics</a></li>
+            <li><a href="#">Public Service</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="products">
+          <header class="m-head"><h3>Products</h3><p>Ekosistem produk Pro… by EKSAD untuk mempercepat bisnis Anda.</p></header>
+          <ul class="m-links">
+            <li><a href="services.html#prodms">ProDMS</a></li>
+            <li><a href="services.html#prohace">Prohace</a></li>
+            <li><a href="services.html#procloud">ProCloud</a></li>
+            <li><a href="services.html#protalent">Protalent</a></li>
+            <li><a href="services.html#protect">ProTect</a></li>
+            <li><a href="services.html#prosage">ProSAGE</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="services">
+          <header class="m-head"><h3>Services</h3><p>Model layanan yang fleksibel sesuai kebutuhan operasional Anda.</p></header>
+          <ul class="m-links">
+            <li><a href="#">SaaS</a></li>
+            <li><a href="#">Managed Services</a></li>
+          </ul>
+        </section>
+        <section class="m-panel" data-panel="blog">
+          <header class="m-head"><h3>Blog</h3><p>Kabar terbaru, event, dan program pelatihan dari EKSAD.</p></header>
+          <ul class="m-links">
+            <li><a href="blog.html#event">Event</a></li>
+            <li><a href="blog.html#training">Training</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- =====================================================
+     OUR SERVICES — satu file untuk seluruh menu Our Services.
+     Tiap halaman = .svc-page#kunci; hanya satu yang tampil, dipilih lewat hash URL
+     (services.html#prodms). ID di dalam halaman diberi awalan kunci (prodms-modules). Router: main.js "SUBHALAMAN".
+     ===================================================== -->
+
+<!-- ##################################################### HALAMAN: automotive -->
+<div class="svc-page" id="automotive" data-title="Automotive — EKSAD Technology">
+
+<!-- =====================================================
+     AUTOMOTIVE — pola halaman capability BCG
+     (hero bertumpuk: judul, intro, foto lebar, teks pembuka; foto+teks, framework bernomor,
+      pernyataan + solusi, Explore More). Teks asli dari https://eksad.com/automotive/
+     ===================================================== -->
+
+<!-- HERO gaya BCG: judul + intro, foto lebar, lalu teks pembuka kolom sempit -->
+<section class="bcg-hero" id="automotive-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Industry</span><span aria-hidden="true">/</span><span>Automotive</span></nav>
+    <h1 class="reveal">Automotive Resilience in Times of Uncertainty</h1>
+    <p class="lead reveal">The global economic slowdown and accompanying uncertainty have put pressure on various industries, including the automotive sector. Dealerships that adapt quickly are the ones that grow.</p>
+    <figure class="bcg-hero-fig reveal"><img src="assets/img/industry/auto-showroom.jpg" alt="Showroom dealer mobil modern dengan deretan kendaraan"></figure>
+    <div class="bcg-hero-body reveal">
+      <p>Consumers, now more cautious with their spending, are more likely to delay purchasing new vehicles. This has driven increased interest in the used car market, which is considered a more affordable alternative. This trend has resulted in a significant drop in new car sales across several key markets.</p>
+      <p>However, as seen in previous challenging times, the automotive industry has shown resilience. Car dealerships, which serve as the manufacturers' connection to customers, are adapting swiftly to these changing consumer preferences. They are shifting to digital strategies, leveraging technology to enhance operational efficiency and bring themselves closer to customers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOTO + TEKS: transformasi digital -->
+<section class="section section-tint" id="automotive-digital">
+  <div class="container ind-split ind-split-rev">
+    <figure class="ind-fig reveal"><img src="assets/img/industry/auto-digital.jpg" alt="Ilustrasi jaringan digital global" loading="lazy"></figure>
+    <div class="ind-copy reveal">
+      <h2>Digital Transformation in the Car-Buying Experience</h2>
+      <p>Before the pandemic and current economic uncertainty, many consumers had already begun enjoying the convenience of exploring vehicles online. Manufacturer websites allowed consumers to "build their dream car," and interactive features like 360-degree views were becoming increasingly popular. But with the challenges posed by the economy and physical restrictions, dealerships began integrating more technology into their services.</p>
+      <p>Now, customers can complete more stages of the buying process online, including exploring financing and insurance options. With the use of apps and websites, dealerships are expanding their digital services. Customer interactions can be conducted through video calls, online consultations, or even scheduled visit services. This provides a more flexible and convenient experience for consumers while reducing the need for direct visits to showrooms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DMS — gaya alur bernomor (ref. Whitespace "How the diagnostic runs"), warna EKSAD.
+     Intro di atas; 4 kartu berjajar + panah di latar putih di bawahnya, langkah aktif berganti otomatis (main.js: FLOW STEPS) -->
+<section class="section" id="automotive-dms">
+  <div class="container flow-grid">
+    <div class="flow-intro reveal">
+      <h2>Why Dealer Management Systems (DMS) Are a Vital Solution in Today’s Situation</h2>
+      <div class="flow-intro-body">
+        <p>A Dealer Management System (DMS) has become an essential tool for automotive dealerships in facing these changes and challenges. This system not only helps dealerships optimize daily operations but also enables them to respond to market shifts quickly and effectively. Here are some reasons why DMS is crucial in today’s climate:</p>
+        <a href="contact.html" class="u-link">Contact our team</a>
+      </div>
+    </div>
+    <div class="flow-panel reveal">
+      <ol class="flow-steps is-reasons">
+        <li class="flow-step is-active" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="32" width="26" height="26" rx="4" fill="url(#pgBlue)"/>
+          <rect x="34" y="32" width="26" height="26" rx="4" fill="url(#pgBlue)"/>
+          <rect x="19" y="6" width="26" height="26" rx="4" fill="url(#pgRed)"/>
+          <path d="M13 32v9l4-2 4 2v-9M43 32v9l4-2 4 2v-9M28 6v9l4-2 4 2V6" fill="#fff" opacity=".55"/>
+          <ellipse cx="10" cy="38" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 10 38)"/><ellipse cx="40" cy="38" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 40 38)"/>
+        </svg></span>
+          <h3>Efficiency in Inventory Management</h3>
+          <p>In an economic situation demanding tight cost control, a DMS helps dealerships monitor inventory in real time. With efficient inventory management, dealerships can avoid overstocking and understocking issues, thereby reducing operational costs.</p>
+        </li>
+        <li class="flow-step" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <circle cx="26" cy="19" r="12" fill="url(#pgBlue)"/>
+          <path d="M4 58c0-13 10-22 22-22s22 9 22 22z" fill="url(#pgBlue)"/>
+          <ellipse cx="21" cy="13" rx="5.5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 21 13)"/>
+          <path d="M49 58S35 49.5 35 40.5c0-4.2 3.2-7.5 7-7.5 2.8 0 5.2 1.6 7 4 1.8-2.4 4.2-4 7-4 3.8 0 7 3.3 7 7.5C63 49.5 49 58 49 58z" fill="url(#pgRed)"/>
+        </svg></span>
+          <h3>More Personalized Customer Experience</h3>
+          <p>A DMS enables dealerships to store customer data and interaction history. This information allows dealerships to provide a more personalized experience for each consumer, creating loyalty and increasing the likelihood of repeat purchases.</p>
+        </li>
+        <li class="flow-step" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="6" width="56" height="52" rx="6" fill="url(#pgBlue)"/>
+          <path d="M60 12v40a6 6 0 0 1-6 6H32V6h22a6 6 0 0 1 6 6z" fill="#000" opacity=".1"/>
+          <ellipse cx="15" cy="13" rx="7" ry="3.5" fill="#fff" opacity=".28" transform="rotate(-20 15 13)"/>
+          <path d="M12 46h40M12 36h40M12 26h40" stroke="#fff" stroke-opacity=".18" stroke-width="1.6"/>
+          <path d="M12 44l11-10 8 6 15-16" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="48" cy="22" r="6.5" fill="url(#pgRed)" stroke="#fff" stroke-width="2.2"/>
+        </svg></span>
+          <h3>Data-Driven Decision-Making</h3>
+          <p>With the data provided by a DMS, dealerships can monitor purchasing trends and adjust sales strategies with greater accuracy. For instance, if demand for used cars increases, dealerships can focus on promotional strategies that align with this need.</p>
+        </li>
+        <li class="flow-step" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="8" y="4" width="30" height="56" rx="6" fill="url(#pgBlue)"/>
+          <rect x="12" y="11" width="22" height="38" rx="2" fill="#fff" opacity=".2"/>
+          <circle cx="23" cy="54" r="2" fill="#fff"/>
+          <ellipse cx="16" cy="12" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 16 12)"/>
+          <path d="M30 30h12M42 30l8-12M42 30l8 12" stroke="#E8222E" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="42" cy="30" r="6" fill="url(#pgRed)"/>
+          <circle cx="52" cy="16" r="5.5" fill="url(#pgRed)"/><circle cx="52" cy="44" r="5.5" fill="url(#pgRed)"/>
+        </svg></span>
+          <h3>Adapting to Digitalization Trends</h3>
+          <p>A DMS supports integration with various digital platforms, allowing dealerships to manage online interactions with customers. With more consumers beginning their purchasing journey online, the ability to provide a seamless digital experience has become a competitive advantage.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PERNYATAAN + SOLUSI (pengganti blok "client success" BCG; tanpa angka karangan) -->
+<section class="section feature" id="automotive-solution">
+  <div class="container bcg-solution">
+    <blockquote class="bcg-statement reveal">With a reliable Dealer Management System, automotive dealerships can better adapt to the current economic climate and stay competitive amid uncertainty.</blockquote>
+    <div class="ind-product reveal" style="--signal:#29B6E8">
+      <div class="ind-prod-art">
+        <span class="p-glyph p-logo p-glyph-dms" aria-hidden="true"><svg viewBox="0 -14 104 96" preserveAspectRatio="xMinYMid meet">
+        <!-- simbol logo ProDMS (speedometer) versi SVG beranimasi -->
+        <path class="dms-arc" pathLength="1" d="M22 62.6 A36.7 36.7 0 1 1 82.2 62.6"/>
+        <path class="g-run dms-run" d="M22 62.6 A36.7 36.7 0 1 1 82.2 62.6"/>
+        <path class="dms-tick" pathLength="1" d="M23.0 52.1 L28.6 50.1" style="transition-delay:300ms"/>
+        <path class="dms-tick" pathLength="1" d="M21.4 37.5 L27.3 38.2" style="transition-delay:360ms"/>
+        <path class="dms-tick" pathLength="1" d="M26.7 23.7 L31.6 27.2" style="transition-delay:420ms"/>
+        <path class="dms-tick" pathLength="1" d="M37.8 14.0 L40.6 19.3" style="transition-delay:480ms"/>
+        <path class="dms-tick" pathLength="1" d="M52.1 10.5 L52.1 16.5" style="transition-delay:540ms"/>
+        <path class="dms-tick" pathLength="1" d="M66.4 14.0 L63.6 19.3" style="transition-delay:600ms"/>
+        <path class="dms-tick" pathLength="1" d="M77.5 23.7 L72.6 27.2" style="transition-delay:660ms"/>
+        <path class="dms-tick" pathLength="1" d="M82.8 37.5 L76.9 38.2" style="transition-delay:720ms"/>
+        <path class="dms-tick" pathLength="1" d="M81.2 52.1 L75.6 50.1" style="transition-delay:780ms"/>
+        <rect class="dms-bar" x="41" y="65.5" width="22" height="3.6" rx="1.8"/>
+        <g class="dms-needle"><path d="M52.1 49 V18"/></g>
+        <circle class="dms-ring" cx="52.1" cy="41.5" r="7"/>
+        <circle class="dms-hub" cx="52.1" cy="41.5" r="7"/>
+      </svg></span>
+      </div>
+      <div class="ind-prod-copy">
+        <span class="px-pcat">Our Solution · Dealer Management System</span>
+        <h2>ProDMS</h2>
+        <p>This system equips dealerships with the ability to respond to ever-evolving consumer needs while maintaining operational efficiency and productivity.</p>
+        <a href="services.html#prodms" class="btn btn-primary">Explore ProDMS <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: kartu foto ke halaman terkait (gaya BCG) -->
+<section class="section" id="automotive-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <!-- kartu gaya hero (BCG): chip + panel kaca; hover = panel menutupi kartu + deskripsi + tombol -->
+    <div class="bcg-explore">
+      <a href="services.html#prodms" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dealer.jpg" alt="" loading="lazy">
+        <span class="c-tag">Automotive</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProDMS</span>
+          <strong class="c-title">Satu Sistem untuk Seluruh Operasional Dealer</strong>
+          <span class="c-more"><span class="c-desc">Kelola penjualan unit, servis bengkel, dan stok sparepart dalam satu sistem terintegrasi. Laporan real-time membantu dealer memantau performa cabang, mengendalikan biaya, dan melayani pelanggan dengan lebih personal.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#prosage" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dashboard.jpg" alt="" loading="lazy">
+        <span class="c-tag">Data &amp; Analytics</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProSAGE</span>
+          <strong class="c-title">Data Analytic untuk Keputusan Bisnis yang Tepat</strong>
+          <span class="c-more"><span class="c-desc">Satukan data penjualan, servis, dan pelanggan dari berbagai sumber menjadi dasbor dan insight yang mudah dipahami, sehingga tren pasar terbaca lebih awal dan strategi bisa disesuaikan dengan cepat.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#procloud" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-datacenter.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cloud</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProCloud</span>
+          <strong class="c-title">Infrastruktur Multi Cloud yang Aman, Efisien, dan Fleksibel</strong>
+          <span class="c-more"><span class="c-desc">Kelola seluruh infrastruktur multi cloud dari satu dasbor dengan keamanan berlapis, biaya yang lebih efisien, dan kapasitas yang mudah ditingkatkan seiring pertumbuhan jaringan dealer Anda.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### HALAMAN: prodms -->
+<div class="svc-page" id="prodms" data-title="ProDMS — Dealer Management System — EKSAD Technology" hidden>
+
+<!-- =====================================================
+     PRODMS — halaman produk (Products → ProDMS)
+     Teks asli dari https://eksad.com/prodms/ (bahasa Inggris).
+     Urutan: hero (lockup + judul + mockup), overview (cloud + kapasitas), 6 modul (pola showcase Home),
+     Why DMS (foto + 4 alasan), pernyataan, Explore More.
+     ===================================================== -->
+
+<!-- HERO: lockup produk + judul + intro di kiri, mockup aplikasi di kanan -->
+<section class="prod-hero" id="prodms-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span><span aria-hidden="true">/</span><span>ProDMS</span></nav>
+    <div class="prod-hero-grid">
+      <div class="prod-hero-copy">
+        <div class="prod-mark reveal" style="--signal:#29B6E8">
+          <span class="p-glyph p-logo p-glyph-dms" aria-hidden="true"><svg viewBox="0 -14 104 96" preserveAspectRatio="xMinYMid meet">
+            <path class="dms-arc" pathLength="1" d="M22 62.6 A36.7 36.7 0 1 1 82.2 62.6"/>
+            <path class="g-run dms-run" d="M22 62.6 A36.7 36.7 0 1 1 82.2 62.6"/>
+            <path class="dms-tick" pathLength="1" d="M23.0 52.1 L28.6 50.1" style="transition-delay:300ms"/>
+            <path class="dms-tick" pathLength="1" d="M21.4 37.5 L27.3 38.2" style="transition-delay:360ms"/>
+            <path class="dms-tick" pathLength="1" d="M26.7 23.7 L31.6 27.2" style="transition-delay:420ms"/>
+            <path class="dms-tick" pathLength="1" d="M37.8 14.0 L40.6 19.3" style="transition-delay:480ms"/>
+            <path class="dms-tick" pathLength="1" d="M52.1 10.5 L52.1 16.5" style="transition-delay:540ms"/>
+            <path class="dms-tick" pathLength="1" d="M66.4 14.0 L63.6 19.3" style="transition-delay:600ms"/>
+            <path class="dms-tick" pathLength="1" d="M77.5 23.7 L72.6 27.2" style="transition-delay:660ms"/>
+            <path class="dms-tick" pathLength="1" d="M82.8 37.5 L76.9 38.2" style="transition-delay:720ms"/>
+            <path class="dms-tick" pathLength="1" d="M81.2 52.1 L75.6 50.1" style="transition-delay:780ms"/>
+            <rect class="dms-bar" x="41" y="65.5" width="22" height="3.6" rx="1.8"/>
+            <g class="dms-needle"><path d="M52.1 49 V18"/></g>
+            <circle class="dms-ring" cx="52.1" cy="41.5" r="7"/>
+            <circle class="dms-hub" cx="52.1" cy="41.5" r="7"/>
+          </svg></span>
+          <span class="prod-mark-txt"><b>ProDMS</b><small>Dealer Management System</small></span>
+        </div>
+        <h1 class="reveal">One Platform. The Entire Dealership</h1>
+        <p class="lead reveal">The DMS product is a dealership system built on a cloud platform by utilizing digital technology. This system covers the entire dealership process, from sales, servicing (including queuing systems), spare parts purchases and Customer Relationship Management (“CRM”).</p>
+        <div class="prod-actions reveal">
+          <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+          <a href="#prodms-modules" class="u-link">Explore the modules</a>
+        </div>
+      </div>
+      <figure class="prod-hero-fig reveal" style="--signal:#29B6E8">
+        <img src="assets/img/product/dms-mockup.png" alt="Tampilan ProDMS di monitor desktop dan aplikasi mobile">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW: satu antarmuka berbasis cloud + kapasitas (angka dari situs asli) -->
+<section class="section section-tint" id="prodms-platform">
+  <div class="container bcg-2col">
+    <div class="reveal">
+      <h2>Built on the Cloud. Ready to Scale</h2>
+      <div class="prod-stat">
+        <strong data-count="500" data-suffix="+">500+</strong>
+        <span>dealers can be served by a single ProDMS platform</span>
+      </div>
+    </div>
+    <div class="bcg-2col-body reveal">
+      <p>Combining java, mobile, cloud, web and digital gateway technologies, by bringing together the many parts of a dealership on a single interface, DMS platforms allow business owners to monitor dealership operations more efficiently and see the big picture more clearly. This system is capable to serve more than 500 dealers.</p>
+      <ul class="prod-tech" aria-label="Teknologi">
+        <li>Java</li><li>Mobile</li><li>Cloud</li><li>Web</li><li>Digital Gateway</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES: pola showcase Home (daftar kiri, panggung kanan, ganti otomatis 5 dtk; main.js: PRODUCT SHOWCASE) -->
+<section class="section" id="prodms-modules">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Six Modules. One Dealership</h2>
+      <p>From the showroom floor to the workshop bay, every ProDMS module works on the same data in real time.</p>
+    </div>
+    <div class="px px-mod reveal" id="prodms-prodShowcase">
+      <ul class="px-list" role="tablist" aria-label="Modul ProDMS">
+        <li><button type="button" class="px-row is-active" role="tab" id="prodms-pxTab0" aria-controls="prodms-pxPanel0" aria-selected="true" style="--signal:#1B5EAB">
+          <span class="px-no">01</span><span class="px-name">Sales</span><span class="px-cat">Order to invoice</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prodms-pxTab1" aria-controls="prodms-pxPanel1" aria-selected="false" style="--signal:#1B5EAB">
+          <span class="px-no">02</span><span class="px-name">Workshop &amp; Service</span><span class="px-cat">Appointment to cashier</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prodms-pxTab2" aria-controls="prodms-pxPanel2" aria-selected="false" style="--signal:#1B5EAB">
+          <span class="px-no">03</span><span class="px-name">Part Purchasing</span><span class="px-cat">Multi-site parts</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prodms-pxTab3" aria-controls="prodms-pxPanel3" aria-selected="false" style="--signal:#1B5EAB">
+          <span class="px-no">04</span><span class="px-name">Inventory</span><span class="px-cat">Real-time stock</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prodms-pxTab4" aria-controls="prodms-pxPanel4" aria-selected="false" style="--signal:#1B5EAB">
+          <span class="px-no">05</span><span class="px-name">CRM</span><span class="px-cat">Marketing automation</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prodms-pxTab5" aria-controls="prodms-pxPanel5" aria-selected="false" style="--signal:#1B5EAB">
+          <span class="px-no">06</span><span class="px-name">Appointments</span><span class="px-cat">Sales &amp; service</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+      </ul>
+      <div class="px-stage">
+        <div class="px-panel is-active" role="tabpanel" id="prodms-pxPanel0" aria-labelledby="prodms-pxTab0" style="--signal:#1B5EAB">
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="6" y="4" width="38" height="52" rx="5" fill="url(#pgBlue)"/><ellipse cx="14" cy="12" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 14 12)"/>
+    <path d="M14 18h22M14 26h22M14 34h14" stroke="#fff" stroke-opacity=".7" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M14 46h10" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M38 32h14l8 8-14 14-8-8z" fill="url(#pgRed)" stroke="url(#pgRed)" stroke-width="2" stroke-linejoin="round"/><circle cx="46" cy="38" r="2.6" fill="#fff"/></svg></span></div>
+          <span class="px-pcat">Module 01</span>
+          <h3 class="px-title">Sales</h3>
+          <p class="px-desc">The Vehicle Sales module provides functionality required for effective vehicle sales management and automation of invoicing and payment collection processes. The module consists of the following components: Vehicle Sales Order, Automatic or Manual Overwrite Matching between Sales Order and vehicle stock, Pre Delivery Inspection and Delivery Orders, Vehicle Registration Number processing and Invoicing.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prodms-pxPanel1" aria-labelledby="prodms-pxTab1" style="--signal:#1B5EAB" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M40.6 32.3L45.5 32.7L45.5 39.3L40.6 39.7L38.4 45.1L38.4 45.1L41.6 48.8L36.8 53.6L33.1 50.4L27.7 52.6L27.7 52.6L27.3 57.5L20.7 57.5L20.3 52.6L14.9 50.4L14.9 50.4L11.2 53.6L6.4 48.8L9.6 45.1L7.4 39.7L7.4 39.7L2.5 39.3L2.5 32.7L7.4 32.3L9.6 26.9L9.6 26.9L6.4 23.2L11.2 18.4L14.9 21.6L20.3 19.4L20.3 19.4L20.7 14.5L27.3 14.5L27.7 19.4L33.1 21.6L33.1 21.6L36.8 18.4L41.6 23.2L38.4 26.9L40.6 32.3Z" fill="url(#pgBlue)"/><circle cx="24" cy="36" r="7" fill="#fff" opacity=".9"/><ellipse cx="16" cy="24" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 16 24)"/>
+    <path d="M58 10a10 10 0 0 0-13 12L30 37l6 6 15-15a10 10 0 0 0 12-13l-6 6-5-1-1-5z" fill="url(#pgRed)"/></svg></span></div>
+          <span class="px-pcat">Module 02</span>
+          <h3 class="px-title">Workshop &amp; Services Management</h3>
+          <p class="px-desc">The Service Management module manages activities related to workshop and service department, starting from service appointment, work orders, parts &amp; oil usage, technician/labor working hours to invoicing and cashier operations. The module tracked customer and vehicles service histories, including those done with third party vendors. The system will automatically generate invoice for each itemized parts, oil and labor involved in a work order.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prodms-pxPanel2" aria-labelledby="prodms-pxTab2" style="--signal:#1B5EAB" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M2 8h9l7 32h32l7-22H15" fill="none" stroke="url(#pgBlue)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 18h42l-7 22H20z" fill="url(#pgBlue)"/><ellipse cx="26" cy="24" rx="7" ry="3" fill="#fff" opacity=".28" transform="rotate(-10 26 24)"/>
+    <circle cx="22" cy="52" r="5" fill="url(#pgBlue)"/><circle cx="48" cy="52" r="5" fill="url(#pgBlue)"/>
+    <path d="M54.8 16.0L57.4 16.2L57.4 19.8L54.8 20.0L53.6 22.8L53.6 22.8L55.3 24.8L52.8 27.3L50.8 25.6L48.0 26.8L48.0 26.8L47.8 29.4L44.2 29.4L44.0 26.8L41.2 25.6L41.2 25.6L39.2 27.3L36.7 24.8L38.4 22.8L37.2 20.0L37.2 20.0L34.6 19.8L34.6 16.2L37.2 16.0L38.4 13.2L38.4 13.2L36.7 11.2L39.2 8.7L41.2 10.4L44.0 9.2L44.0 9.2L44.2 6.6L47.8 6.6L48.0 9.2L50.8 10.4L50.8 10.4L52.8 8.7L55.3 11.2L53.6 13.2L54.8 16.0Z" fill="url(#pgRed)"/><circle cx="46" cy="18" r="3.6" fill="#fff"/></svg></span></div>
+          <span class="px-pcat">Module 03</span>
+          <h3 class="px-title">Part Purchasing</h3>
+          <p class="px-desc">The Parts Purchasing module provides facilities to help your company track various parts in multi site and warehouse location. Information collected from each counter related to the used parts for service and the back order which is used to make requisition. System will check the availability and process the approval for Purchase Order. Data for PO can be imported and used with Manufacturer Parts Ordering System.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prodms-pxPanel3" aria-labelledby="prodms-pxTab3" style="--signal:#1B5EAB" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="6" y="22" width="34" height="34" rx="5" fill="url(#pgBlue)"/>
+    <path d="M18 22v12l5-3 5 3V22" fill="#fff" opacity=".55"/><ellipse cx="13" cy="29" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 13 29)"/>
+    <circle cx="46" cy="18" r="15" fill="url(#pgRed)"/>
+    <path d="M38 16a8.5 8.5 0 0 1 15-4M54 20a8.5 8.5 0 0 1-15 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M53.5 7.5v5h-5M38.5 28.5v-5h5" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <span class="px-pcat">Module 04</span>
+          <h3 class="px-title">Real-Time Updated Inventory Information</h3>
+          <p class="px-desc">The DMS provides real-time updated inventory information, enabling dealers to monitor stock levels for vehicles, parts, and other equipment accurately. This feature helps dealers manage availability and prevent overstocking or stockouts.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prodms-pxPanel4" aria-labelledby="prodms-pxTab4" style="--signal:#1B5EAB" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="22" cy="22" r="11" fill="url(#pgBlue)"/><path d="M2 58c0-12 9-20 20-20s20 8 20 20z" fill="url(#pgBlue)"/><ellipse cx="18" cy="17" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 18 17)"/>
+    <path d="M38 4h20a5 5 0 0 1 5 5v13a5 5 0 0 1-5 5h-9l-7 6v-6h-4a5 5 0 0 1-5-5V9a5 5 0 0 1 5-5z" fill="url(#pgRed)"/>
+    <circle cx="42" cy="15.5" r="2" fill="#fff"/><circle cx="48" cy="15.5" r="2" fill="#fff"/><circle cx="54" cy="15.5" r="2" fill="#fff"/></svg></span></div>
+          <span class="px-pcat">Module 05</span>
+          <h3 class="px-title">Integrated CRM with Marketing Automation Features</h3>
+          <p class="px-desc">The DMS includes an integrated Customer Relationship Management (CRM) system with marketing automation features, allowing dealers to manage customer relationships and execute marketing campaigns automatically. This feature enhances customer engagement and builds stronger loyalty.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prodms-pxPanel5" aria-labelledby="prodms-pxTab5" style="--signal:#1B5EAB" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="2" y="8" width="48" height="48" rx="6" fill="url(#pgBlue)"/><rect x="2" y="8" width="48" height="13" rx="6" fill="#5a9be6"/>
+    <rect x="12" y="3" width="5" height="12" rx="2.5" fill="#0e3466"/><rect x="35" y="3" width="5" height="12" rx="2.5" fill="#0e3466"/>
+    <path d="M10 30h6M21 30h6M32 30h6M10 40h6M21 40h6" stroke="#fff" stroke-opacity=".7" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="47" cy="47" r="15" fill="url(#pgRed)"/><path d="M47 39v8.5l5.5 3.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <span class="px-pcat">Module 06</span>
+          <h3 class="px-title">Integrated Appointment Management System for Sales and Service</h3>
+          <p class="px-desc">With an integrated appointment management system, dealers can efficiently schedule sales and service appointments. This feature optimizes time management and increases customer satisfaction through structured and timely arrangements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DMS: foto stok dealer di kiri, intro + 4 alasan bernomor di kanan (tanpa kartu) -->
+<section class="section section-tint" id="prodms-why">
+  <div class="container why-grid">
+    <figure class="why-fig reveal"><img src="assets/img/product/dms-assembly.jpg" alt="Perakitan sepeda motor di lini produksi pabrik" loading="lazy"></figure>
+    <div class="why-copy">
+      <h2 class="reveal">Why DMS. Why Now</h2>
+      <p class="why-intro reveal">A Dealer Management System (DMS) has become an essential tool for automotive dealerships in facing these changes and challenges. This system not only helps dealerships optimize daily operations but also enables them to respond to market shifts quickly and effectively.</p>
+      <ol class="why-list">
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="32" width="26" height="26" rx="4" fill="url(#pgBlue)"/>
+          <rect x="34" y="32" width="26" height="26" rx="4" fill="url(#pgBlue)"/>
+          <rect x="19" y="6" width="26" height="26" rx="4" fill="url(#pgRed)"/>
+          <path d="M13 32v9l4-2 4 2v-9M43 32v9l4-2 4 2v-9M28 6v9l4-2 4 2V6" fill="#fff" opacity=".55"/>
+          <ellipse cx="10" cy="38" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 10 38)"/><ellipse cx="40" cy="38" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 40 38)"/>
+        </svg></span><h3>Efficiency in Inventory Management</h3><p>In an economic situation demanding tight cost control, a DMS helps dealerships monitor inventory in real time. With efficient inventory management, dealerships can avoid overstocking and understocking issues, thereby reducing operational costs.</p></li>
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <circle cx="26" cy="19" r="12" fill="url(#pgBlue)"/>
+          <path d="M4 58c0-13 10-22 22-22s22 9 22 22z" fill="url(#pgBlue)"/>
+          <ellipse cx="21" cy="13" rx="5.5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 21 13)"/>
+          <path d="M49 58S35 49.5 35 40.5c0-4.2 3.2-7.5 7-7.5 2.8 0 5.2 1.6 7 4 1.8-2.4 4.2-4 7-4 3.8 0 7 3.3 7 7.5C63 49.5 49 58 49 58z" fill="url(#pgRed)"/>
+        </svg></span><h3>More Personalized Customer Experience</h3><p>A DMS enables dealerships to store customer data and interaction history. This information allows dealerships to provide a more personalized experience for each consumer, creating loyalty and increasing the likelihood of repeat purchases.</p></li>
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="6" width="56" height="52" rx="6" fill="url(#pgBlue)"/>
+          <path d="M60 12v40a6 6 0 0 1-6 6H32V6h22a6 6 0 0 1 6 6z" fill="#000" opacity=".1"/>
+          <ellipse cx="15" cy="13" rx="7" ry="3.5" fill="#fff" opacity=".28" transform="rotate(-20 15 13)"/>
+          <path d="M12 46h40M12 36h40M12 26h40" stroke="#fff" stroke-opacity=".18" stroke-width="1.6"/>
+          <path d="M12 44l11-10 8 6 15-16" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="48" cy="22" r="6.5" fill="url(#pgRed)" stroke="#fff" stroke-width="2.2"/>
+        </svg></span><h3>Data-Driven Decision-Making</h3><p>With the data provided by a DMS, dealerships can monitor purchasing trends and adjust sales strategies with greater accuracy. For instance, if demand for used cars increases, dealerships can focus on promotional strategies that align with this need.</p></li>
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="8" y="4" width="30" height="56" rx="6" fill="url(#pgBlue)"/>
+          <rect x="12" y="11" width="22" height="38" rx="2" fill="#fff" opacity=".2"/>
+          <circle cx="23" cy="54" r="2" fill="#fff"/>
+          <ellipse cx="16" cy="12" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 16 12)"/>
+          <path d="M30 30h12M42 30l8-12M42 30l8 12" stroke="#E8222E" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="42" cy="30" r="6" fill="url(#pgRed)"/>
+          <circle cx="52" cy="16" r="5.5" fill="url(#pgRed)"/><circle cx="52" cy="44" r="5.5" fill="url(#pgRed)"/>
+        </svg></span><h3>Adapting to Digitalization Trends</h3><p>A DMS supports integration with various digital platforms, allowing dealerships to manage online interactions with customers. With more consumers beginning their purchasing journey online, the ability to provide a seamless digital experience has become a competitive advantage.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PERNYATAAN penutup (teks asli) + ajakan -->
+<section class="section feature" id="prodms-statement">
+  <div class="container bcg-solution">
+    <blockquote class="bcg-statement reveal">With a reliable Dealer Management System, automotive dealerships can better adapt to the current economic climate and stay competitive amid uncertainty.</blockquote>
+    <div class="prod-close reveal">
+      <p>This system equips dealerships with the ability to respond to ever-evolving consumer needs while maintaining operational efficiency and productivity.</p>
+      <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: industri + produk terkait (kartu gaya hero BCG) -->
+<section class="section" id="prodms-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <div class="bcg-explore">
+      <a href="services.html#automotive" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/industry/auto-showroom.jpg" alt="" loading="lazy">
+        <span class="c-tag">Industry</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Industry</b>Automotive</span>
+          <strong class="c-title">Automotive Resilience in Times of Uncertainty</strong>
+          <span class="c-more"><span class="c-desc">Bagaimana dealer otomotif beradaptasi di tengah perlambatan ekonomi: beralih ke strategi digital, meningkatkan efisiensi operasional, dan semakin dekat dengan pelanggan.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#prosage" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dashboard.jpg" alt="" loading="lazy">
+        <span class="c-tag">Data &amp; Analytics</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProSAGE</span>
+          <strong class="c-title">Data Analytic untuk Keputusan Bisnis yang Tepat</strong>
+          <span class="c-more"><span class="c-desc">Satukan data penjualan, servis, dan pelanggan dari berbagai sumber menjadi dasbor dan insight yang mudah dipahami, sehingga tren pasar terbaca lebih awal dan strategi bisa disesuaikan dengan cepat.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#procloud" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-datacenter.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cloud</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProCloud</span>
+          <strong class="c-title">Infrastruktur Multi Cloud yang Aman, Efisien, dan Fleksibel</strong>
+          <span class="c-more"><span class="c-desc">Kelola seluruh infrastruktur multi cloud dari satu dasbor dengan keamanan berlapis, biaya yang lebih efisien, dan kapasitas yang mudah ditingkatkan seiring pertumbuhan jaringan dealer Anda.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### HALAMAN: prohace -->
+<div class="svc-page" id="prohace" data-title="Prohace — Human Capital Information System — EKSAD Technology" hidden>
+
+<!-- =====================================================
+     PROHACE — halaman produk (Products → Prohace). Teks asli https://eksad.com/prohace/
+     Urutan: hero, enam keunggulan, empat modul (showcase .px), penutup, Explore More.
+     ===================================================== -->
+
+<section class="prod-hero" id="prohace-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span><span aria-hidden="true">/</span><span>Prohace</span></nav>
+    <div class="prod-hero-grid">
+      <div class="prod-hero-copy">
+        <div class="prod-mark reveal" style="--signal:#E8222E">
+          <span class="p-glyph p-logo" aria-hidden="true"><svg viewBox="0 0 96 60" preserveAspectRatio="xMinYMid meet">
+        <g class="lg-pop lg-wave lg-blue" style="--i:0"><rect x="22.8" y="4.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 28 10)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:1"><rect x="32.8" y="14.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 38 20)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:2"><rect x="2.8" y="24.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 8 30)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:3"><rect x="22.8" y="24.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 28 30)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:4"><rect x="42.8" y="24.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 48 30)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:5"><rect x="12.8" y="34.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 18 40)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:6"><rect x="22.8" y="44.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 28 50)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:7"><rect x="62.8" y="4.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 68 10)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:8"><rect x="52.8" y="14.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 58 20)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:9"><rect x="82.8" y="24.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 88 30)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:10"><rect x="52.8" y="34.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 58 40)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:11"><rect x="72.8" y="34.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 78 40)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:12"><rect x="62.8" y="44.8" width="10.4" height="10.4" rx="1.4" transform="rotate(45 68 50)"/></g>
+      </svg></span>
+          <span class="prod-mark-txt"><b>Prohace</b><small>Human Capital Information System</small></span>
+        </div>
+        <h1 class="reveal">Streamline Your HR Operations with Prohace</h1>
+        <p class="lead reveal">A cloud-based human capital management application tailored for modern business needs. The ideal choice for effective and efficient human capital management.</p>
+        <div class="prod-actions reveal">
+          <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+          <a href="https://www.prohace.com/" class="u-link" target="_blank" rel="noopener">Go to Prohace ↗</a>
+        </div>
+      </div>
+      <figure class="prod-hero-fig reveal" style="--signal:#E8222E">
+        <img src="assets/img/product/phc-mockup.png" alt="Tampilan Prohace di aplikasi mobile dan laptop">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- HCIS: judul + paragraf asli eksad.com/prohace (tanpa daftar per poin) + video produk asli
+     (youtube.com/watch?v=jrqKBH9h7q4 dari eksad.com/prohace). Klik video = pop up layar penuh (main.js: VIDEO POP UP). -->
+<section class="section section-tint" id="prohace-advantages">
+  <div class="container adv-grid">
+    <div class="adv-copy">
+      <h2 class="reveal">Human Capital Information System</h2>
+      <p class="reveal">A cloud-based human capital management application tailored for modern business needs. With multi-platform advantages, Prohace – HCIS offers ease of use, lightweight performance, cost efficiency, fast report generation, convenient data migration, and seamless integration with your company’s existing systems. The ideal choice for effective and efficient human capital management.</p>
+    </div>
+    <button type="button" class="vid-card reveal" data-video="jrqKBH9h7q4" aria-label="Putar video produk Prohace">
+      <img src="assets/img/product/phc-video.jpg" alt="" loading="lazy">
+      <span class="vid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+      <span class="vid-cap"><b>Watch the Product Video</b>Prohace by EKSAD · HR Software</span>
+    </button>
+  </div>
+</section>
+
+<!-- EMPAT MODUL: pola showcase Home (main.js: PRODUCT SHOWCASE) -->
+<section class="section" id="prohace-modules">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Four Modules. Every HR Process</h2>
+      <p>From core HR and attendance to payroll and performance, all in a single application.</p>
+    </div>
+    <div class="px px-mod reveal" id="prohace-prodShowcase">
+      <ul class="px-list" role="tablist" aria-label="Modul Prohace">
+        <li><button type="button" class="px-row is-active" role="tab" id="prohace-pxTab0" aria-controls="prohace-pxPanel0" aria-selected="true" style="--signal:#E8222E">
+          <span class="px-no">01</span><span class="px-name">Core HR &amp; Movement</span><span class="px-cat">Multi-company</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prohace-pxTab1" aria-controls="prohace-pxPanel1" aria-selected="false" style="--signal:#E8222E">
+          <span class="px-no">02</span><span class="px-name">Attendance</span><span class="px-cat">Mobile &amp; geo-tagged</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prohace-pxTab2" aria-controls="prohace-pxPanel2" aria-selected="false" style="--signal:#E8222E">
+          <span class="px-no">03</span><span class="px-name">Payroll &amp; Tax</span><span class="px-cat">BPJS &amp; Form 1721</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+        <li><button type="button" class="px-row" role="tab" id="prohace-pxTab3" aria-controls="prohace-pxPanel3" aria-selected="false" style="--signal:#E8222E">
+          <span class="px-no">04</span><span class="px-name">Performance</span><span class="px-cat">360° appraisal</span><span class="px-bar" aria-hidden="true"></span>
+        </button></li>
+      </ul>
+      <div class="px-stage">
+        <div class="px-panel is-active" role="tabpanel" id="prohace-pxPanel0" aria-labelledby="prohace-pxTab0" style="--signal:#E8222E">
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M30 18v10M14 36v-8h32v8" fill="none" stroke="#1B5EAB" stroke-opacity=".45" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="20" y="2" width="20" height="17" rx="4" fill="url(#pgBlue)"/><ellipse cx="26" cy="7" rx="4" ry="2" fill="#fff" opacity=".28" transform="rotate(-20 26 7)"/>
+    <rect x="2" y="36" width="24" height="20" rx="4" fill="url(#pgBlue)"/><rect x="34" y="36" width="24" height="20" rx="4" fill="url(#pgBlue)"/>
+    <circle cx="14" cy="43" r="3.4" fill="#fff"/><path d="M8 52a6 5 0 0 1 12 0" fill="#fff"/>
+    <circle cx="46" cy="43" r="3.4" fill="#fff"/><path d="M40 52a6 5 0 0 1 12 0" fill="#fff"/>
+    <circle cx="52" cy="14" r="11" fill="url(#pgRed)"/><path d="M52 20v-11M47 13.5l5-5 5 5" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <span class="px-pcat">Module 01</span>
+          <h3 class="px-title">Core HR &amp; Movement</h3>
+          <p class="px-desc">Prohace offers nearly all processes needed for efficient human capital management. It even accommodates multi-company or group company concepts and outsourcing management, simplifying large-scale administration. Advanced access settings include multi-role configurations, menu access, button access, and data access based on company, location, and grade. This ensures users can only access data according to their authority, enhancing data security and compliance.</p>
+          <p class="px-desc">Organizational structures, organizational templates, and comprehensive employee data can be easily set up or migrated via Excel. Approval workflows can be customized to various levels, and the career movement feature covers promotion, demotion, rotation, termination, and cross-company movement.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prohace-pxPanel1" aria-labelledby="prohace-pxTab1" style="--signal:#E8222E" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="6" y="2" width="32" height="60" rx="7" fill="url(#pgBlue)"/>
+    <rect x="11" y="10" width="22" height="40" rx="2" fill="#fff" opacity=".2"/><circle cx="22" cy="56" r="2.2" fill="#fff"/><ellipse cx="14" cy="10" rx="4" ry="2.5" fill="#fff" opacity=".28" transform="rotate(-30 14 10)"/>
+    <path d="M16 30l4 4 8-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M48 14c-8 0-14 6-14 13.5C34 37 48 50 48 50s14-13 14-22.5C62 20 56 14 48 14z" fill="url(#pgRed)"/><circle cx="48" cy="27.5" r="5" fill="#fff"/></svg></span></div>
+          <span class="px-pcat">Module 02</span>
+          <h3 class="px-title">Comprehensive Attendance</h3>
+          <p class="px-desc">Prohace offers ease in managing employee attendance and contract workers (outsourcing), including clock-in, clock-out, leave requests, permissions, sick leave, business trips, overtime, and attendance data correction. Employees can easily use the attendance feature through a mobile application available in Android and iOS versions. Mobile attendance is equipped with Geo-Tagged and Face Detection, providing real-time location reports and photo verification.</p>
+          <p class="px-desc">WFO (Work from Office), WFH (Work from Home), and Shift schedules can be easily arranged via Excel upload or per individual employee. Attendance information is integrated with payroll calculations through the system, ensuring accuracy and efficiency.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prohace-pxPanel2" aria-labelledby="prohace-pxTab2" style="--signal:#E8222E" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="4" y="4" width="40" height="52" rx="5" fill="url(#pgBlue)"/><ellipse cx="12" cy="12" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 12 12)"/>
+    <path d="M12 16h24M12 24h24M12 32h16" stroke="#fff" stroke-opacity=".7" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M12 44h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="46" cy="46" r="15" fill="url(#pgRed)"/><circle cx="46" cy="46" r="10.5" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.6"/>
+    <path d="M46 39v14M50 42c-1-1.3-2.4-1.8-4-1.8-2 0-3.6 1-3.6 2.7s1.8 2.3 3.6 2.7 3.6 1 3.6 2.7-1.6 2.7-3.6 2.7c-1.5 0-3-.5-4-1.8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span></div>
+          <span class="px-pcat">Module 03</span>
+          <h3 class="px-title">Easy Payroll and Tax</h3>
+          <p class="px-desc">Prohace features comprehensive and user-friendly payroll and tax calculation management. Component parameters and formulas can be easily configured following the latest regulations. Payroll components can be managed using batch Excel uploads, individual component updates, or automatically calculated by the system. Payroll calculations are connected with attendance data, social security (BPJS), employee loans, and scheduled repayment settings.</p>
+          <p class="px-desc">The calculation process is straightforward and fast. The system will automatically display which employees need recalculation. Users can perform calculations on all employees or individually. Tax calculations cover employee taxes and contract worker taxes, and Form 1721 can be automatically generated by the system. For holding companies, calculations or monitoring of all subsidiaries can be easily done within a single application.</p>
+        </div>
+        <div class="px-panel" role="tabpanel" id="prohace-pxPanel3" aria-labelledby="prohace-pxTab3" style="--signal:#E8222E" hidden>
+          <div class="px-art"><span class="mod-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="6" y="8" width="40" height="52" rx="5" fill="url(#pgBlue)"/>
+    <rect x="16" y="3" width="20" height="10" rx="3" fill="#0e3466"/><ellipse cx="14" cy="18" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 14 18)"/>
+    <rect x="14" y="40" width="6" height="12" rx="1.5" fill="#fff" opacity=".8"/><rect x="23" y="33" width="6" height="19" rx="1.5" fill="#fff" opacity=".8"/><rect x="32" y="26" width="6" height="26" rx="1.5" fill="#fff" opacity=".8"/>
+    <path d="M48 6l4.3 8.8 9.7 1.4-7 6.8 1.7 9.6-8.7-4.6-8.7 4.6 1.7-9.6-7-6.8 9.7-1.4z" fill="url(#pgRed)"/></svg></span></div>
+          <span class="px-pcat">Module 04</span>
+          <h3 class="px-title">Performance Management</h3>
+          <p class="px-desc">A 360° performance appraisal feature is available, including self-assessment, supervisors, subordinates, peers, or specific employees. Questionnaires can be easily inputted through the Employee Self Service (ESS), with scores automatically calculated by the system and comparable among reviewers. The final score can be adjusted as needed by authorized users.</p>
+          <p class="px-desc">To provide solutions for tracking employee competency development, there is a People Development feature covering the assessment process, development programs, monitoring, and evaluation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PENUTUP -->
+<section class="section feature" id="prohace-statement">
+  <div class="container bcg-solution">
+    <blockquote class="bcg-statement reveal">The ideal choice for effective and efficient human capital management.</blockquote>
+    <div class="prod-close reveal">
+      <p>Prohace is lightweight, cost-efficient, and integrates seamlessly with your company’s existing systems.</p>
+      <div class="prod-actions">
+        <a href="https://www.prohace.com/" class="u-link" target="_blank" rel="noopener">Go to Prohace ↗</a>
+        <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: produk terkait (kartu gaya hero BCG) -->
+<section class="section" id="prohace-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <div class="bcg-explore">
+      <a href="services.html#protalent" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/product/pt-manager.jpg" alt="" loading="lazy">
+        <span class="c-tag">IT Resources</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>Protalent</span>
+          <strong class="c-title">Talenta IT Profesional untuk Tim Anda</strong>
+          <span class="c-more"><span class="c-desc">Akses developer, analis, QA, hingga arsitek IT berpengalaman untuk memperkuat proyek dan tim internal Anda.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#protect" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-security.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cyber Security</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProTect</span>
+          <strong class="c-title">Perlindungan Siber Menyeluruh untuk Bisnis Anda</strong>
+          <span class="c-more"><span class="c-desc">Dari endpoint, akses istimewa, hingga Security Operations Center: lindungi data dan infrastruktur IT dari berbagai ancaman siber.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#procloud" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-datacenter.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cloud</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProCloud</span>
+          <strong class="c-title">Infrastruktur Multi Cloud yang Aman, Efisien, dan Fleksibel</strong>
+          <span class="c-more"><span class="c-desc">Konsultasi, migrasi, implementasi, dan dukungan lokal untuk Alibaba Cloud, AWS, Azure, Google Cloud, dan Huawei Cloud dari satu mitra.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### HALAMAN: procloud -->
+<div class="svc-page" id="procloud" data-title="ProCloud — Multi Cloud System — EKSAD Technology" hidden>
+
+<!-- =====================================================
+     PROCLOUD — halaman produk (Products → ProCloud). Teks asli https://eksad.com/procloud/
+     Urutan: hero (foto), multi cloud, empat layanan, penghargaan, penutup + WhatsApp, Explore More.
+     ===================================================== -->
+
+<section class="prod-hero" id="procloud-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span><span aria-hidden="true">/</span><span>ProCloud</span></nav>
+    <div class="prod-hero-grid">
+      <div class="prod-hero-copy">
+        <div class="prod-mark reveal" style="--signal:#1B5EAB">
+          <span class="p-glyph p-logo" aria-hidden="true"><svg viewBox="62 40 312 310" preserveAspectRatio="xMinYMid meet">
+        <path class="pc-cloud" pathLength="1" d="M176 191 H125 A36 36 0 1 1 152.6 131.9"/>
+        <path class="pc-cloud" pathLength="1" d="M155.6 118.9 A103 103 0 1 1 191.6 268.9" style="transition-delay:200ms"/>
+        <path class="pc-run" d="M155.6 118.9 A103 103 0 1 1 191.6 268.9"/>
+        <path class="pc-slash" style="--i:0" d="M210 175 H255 L228 215 H183 Z"/>
+        <path class="pc-slash" style="--i:1" d="M120 295 H160 L140 335 H95 Z"/>
+      </svg></span>
+          <span class="prod-mark-txt"><b>ProCloud</b><small>Multi Cloud System</small></span>
+        </div>
+        <h1 class="reveal">Cloud Consulting Services</h1>
+        <p class="lead reveal">We help organizations transform their IT environment with cost-effective Cloud services. Our team of experts delivers cutting-edge Cloud computing consulting services that help companies boost their productivity to new heights.</p>
+        <div class="prod-actions reveal">
+          <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+          <a href="#procloud-services" class="u-link">Explore our services</a>
+        </div>
+      </div>
+      <figure class="prod-hero-fig is-photo reveal">
+        <img src="assets/img/hero-datacenter.jpg" alt="Lorong rak server di data center">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- MULTI CLOUD: 2 paragraf asli (diringkas dari 3) + ikon ProCloud di tengah dikelilingi logo 5 penyedia cloud (segi lima, tanpa garis/lingkaran).
+     Logo: simple-icons 9.21.0 (CC0; merek milik pemiliknya), diberi warna merek. Proximity scale: main.js blok CLOUD ORBIT. -->
+<section class="section section-tint" id="procloud-multicloud">
+  <div class="container co-grid">
+    <div class="co-copy">
+      <h2 class="reveal">One Partner. Every Cloud</h2>
+      <p class="reveal">We are a one-stop Cloud service provider for world-class Cloud services with diverse options which range from Cloud consulting services to data center migration services. A multi-cloud strategy allows you to access the cloud services from multiple cloud providers simultaneously, including Alibaba Cloud, AWS, Azure, Google Cloud or Huawei Cloud, so you can innovate and grow your business faster than if your data was locked into a single cloud.</p>
+      <p class="reveal">Our Cloud managed services make it possible for organizations to reduce their overheads and better productivity, in addition to lowering costs and reducing time-to-market, with on-demand enterprise Cloud solutions such as servers, storage, databases, networking, software, and apps.</p>
+    </div>
+    <div class="co-field reveal" id="cloudOrbit">
+      <span class="co-orbit co-orbit-1" aria-hidden="true"></span>
+      <span class="co-core"><span class="p-glyph p-logo co-core-ico" aria-hidden="true"><svg viewBox="62 40 312 310" preserveAspectRatio="xMinYMid meet">
+        <path class="pc-cloud" pathLength="1" d="M176 191 H125 A36 36 0 1 1 152.6 131.9"/>
+        <path class="pc-cloud" pathLength="1" d="M155.6 118.9 A103 103 0 1 1 191.6 268.9" style="transition-delay:200ms"/>
+        <path class="pc-run" d="M155.6 118.9 A103 103 0 1 1 191.6 268.9"/>
+        <path class="pc-slash" style="--i:0" d="M210 175 H255 L228 215 H183 Z"/>
+        <path class="pc-slash" style="--i:1" d="M120 295 H160 L140 335 H95 Z"/>
+      </svg></span></span>
+      <ul class="co-list" aria-label="Penyedia cloud">
+        <li class="co-item" style="--x:50%;--y:13%;--d:0.0s"><span class="co-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#FF6A00" d="M3.996 4.517h5.291L8.01 6.324 4.153 7.506a1.668 1.668 0 0 0-1.165 1.601v5.786a1.668 1.668 0 0 0 1.165 1.6l3.857 1.183 1.277 1.807H3.996A3.996 3.996 0 0 1 0 15.487V8.513a3.996 3.996 0 0 1 3.996-3.996m16.008 0h-5.291l1.277 1.807 3.857 1.182c.715.227 1.17.889 1.165 1.601v5.786a1.668 1.668 0 0 1-1.165 1.6l-3.857 1.183-1.277 1.807h5.291A3.996 3.996 0 0 0 24 15.487V8.513a3.996 3.996 0 0 0-3.996-3.996m-4.007 8.345H8.002v-1.804h7.995Z"/></svg></span><span class="co-name">Alibaba Cloud</span></li>
+        <li class="co-item" style="--x:85.2%;--y:38.6%;--d:-0.8s"><span class="co-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#232F3E" d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg></span><span class="co-name">AWS</span></li>
+        <li class="co-item" style="--x:71.7%;--y:79.9%;--d:-1.6s"><span class="co-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#0078D4" d="M22.379 23.343a1.62 1.62 0 0 0 1.536-2.14v.002L17.35 1.76A1.62 1.62 0 0 0 15.816.657H8.184A1.62 1.62 0 0 0 6.65 1.76L.086 21.204a1.62 1.62 0 0 0 1.536 2.139h4.741a1.62 1.62 0 0 0 1.535-1.103l.977-2.892 4.947 3.675c.28.208.618.32.966.32m-3.084-12.531 3.624 10.739a.54.54 0 0 1-.51.713v-.001h-.03a.54.54 0 0 1-.322-.106l-9.287-6.9h4.853m6.313 7.006c.116-.326.13-.694.007-1.058L9.79 1.76a1.722 1.722 0 0 0-.007-.02h6.034a.54.54 0 0 1 .512.366l6.562 19.445a.54.54 0 0 1-.338.684"/></svg></span><span class="co-name">Azure</span></li>
+        <li class="co-item" style="--x:28.3%;--y:79.9%;--d:-2.4s"><span class="co-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0-3.875 2.551-3.922 8.11-.247 10.941l.006-.007-.007.03a6.717 6.717 0 0 0 4.077 1.356h5.173l.03.03h5.192c6.687.053 9.376-8.605 3.835-12.35a9.365 9.365 0 0 0-2.821-4.552l-.043.043.006-.05A9.344 9.344 0 0 0 12.19 2.38zm-.358 4.146c1.244-.04 2.518.368 3.486 1.15a5.186 5.186 0 0 1 1.862 4.078v.518c3.53-.07 3.53 5.262 0 5.193h-5.193l-.008.009v-.04H6.785a2.59 2.59 0 0 1-1.067-.23h.001a2.597 2.597 0 1 1 3.437-3.437l3.013-3.012A6.747 6.747 0 0 0 8.11 8.24c.018-.01.04-.026.054-.023a5.186 5.186 0 0 1 3.67-1.69z"/></svg></span><span class="co-name">Google Cloud</span></li>
+        <li class="co-item" style="--x:14.8%;--y:38.6%;--d:-3.2s"><span class="co-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#CF0A2C" d="M3.67 6.14S1.82 7.91 1.72 9.78v.35c.08 1.51 1.22 2.4 1.22 2.4 1.83 1.79 6.26 4.04 7.3 4.55 0 0 .06.03.1-.01l.02-.04v-.04C7.52 10.8 3.67 6.14 3.67 6.14zM9.65 18.6c-.02-.08-.1-.08-.1-.08l-7.38.26c.8 1.43 2.15 2.53 3.56 2.2.96-.25 3.16-1.78 3.88-2.3.06-.05.04-.09.04-.09zm.08-.78C6.49 15.63.21 12.28.21 12.28c-.15.46-.2.9-.21 1.3v.07c0 1.07.4 1.82.4 1.82.8 1.69 2.34 2.2 2.34 2.2.7.3 1.4.31 1.4.31.12.02 4.4 0 5.54 0 .05 0 .08-.05.08-.05v-.06c0-.03-.03-.05-.03-.05zM9.06 3.19a3.42 3.42 0 00-2.57 3.15v.41c.03.6.16 1.05.16 1.05.66 2.9 3.86 7.65 4.55 8.65.05.05.1.03.1.03a.1.1 0 00.06-.1c1.06-10.6-1.11-13.42-1.11-13.42-.32.02-1.19.23-1.19.23zm8.299 2.27s-.49-1.8-2.44-2.28c0 0-.57-.14-1.17-.22 0 0-2.18 2.81-1.12 13.43.01.07.06.08.06.08.07.03.1-.03.1-.03.72-1.03 3.9-5.76 4.55-8.64 0 0 .36-1.4.02-2.34zm-2.92 13.07s-.07 0-.09.05c0 0-.01.07.03.1.7.51 2.85 2 3.88 2.3 0 0 .16.05.43.06h.14c.69-.02 1.9-.37 3-2.26l-7.4-.25zm7.83-8.41c.14-2.06-1.94-3.97-1.94-3.98 0 0-3.85 4.66-6.67 10.8 0 0-.03.08.02.13l.04.01h.06c1.06-.53 5.46-2.77 7.28-4.54 0 0 1.15-.93 1.21-2.42zm1.52 2.14s-6.28 3.37-9.52 5.55c0 0-.05.04-.03.11 0 0 .03.06.07.06 1.16 0 5.56 0 5.67-.02 0 0 .57-.02 1.27-.29 0 0 1.56-.5 2.37-2.27 0 0 .73-1.45.17-3.14z"/></svg></span><span class="co-name">Huawei Cloud</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EMPAT LAYANAN (ikon asli) -->
+<section class="section" id="procloud-services">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Four Services. One Cloud Journey</h2>
+      <p>From the first assessment to day-to-day operations, our team stays with you at every step.</p>
+    </div>
+    <ul class="why-list why-list-4">
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M18 46a12 12 0 0 1-1.5-23.9A16 16 0 0 1 47 18.5 13.5 13.5 0 0 1 47 46z" fill="url(#pgBlue)"/>
+          <ellipse cx="26" cy="20" rx="8" ry="4" fill="#fff" opacity=".28" transform="rotate(-20 26 20)"/>
+          <circle cx="44" cy="46" r="14" fill="url(#pgRed)"/>
+          <path d="M37 42.5h13l-3.5-3.5M51 49.5H38l3.5 3.5" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></span><h3>Migration</h3><p>We have extensive experience in multi-cloud data migration and transitioning from on-premise environments to the cloud. Your data migration process will be managed with precision and security, maximizing system efficiency and performance.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M18 46a12 12 0 0 1-1.5-23.9A16 16 0 0 1 47 18.5 13.5 13.5 0 0 1 47 46z" fill="url(#pgBlue)"/>
+          <ellipse cx="26" cy="20" rx="8" ry="4" fill="#fff" opacity=".28" transform="rotate(-20 26 20)"/>
+          <path d="M17 38v-5M23 38v-9M29 38v-6" stroke="#fff" stroke-opacity=".85" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M50 51l8 8" stroke="url(#pgRed)" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="43" cy="44" r="10" fill="url(#pgRed)"/>
+          <circle cx="43" cy="44" r="6" fill="#fff" opacity=".9"/>
+        </svg></span><h3>Consulting</h3><p>Our seasoned Cloud Consultants are ready to help you assess the efficacy of popular cloud solutions and implement them optimally. With our professional guidance, your digital transformation becomes more focused and successful.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M12 6h40a8 8 0 0 1 8 8v28a8 8 0 0 1-8 8H30l-12 10v-10h-6a8 8 0 0 1-8-8V14a8 8 0 0 1 8-8z" fill="url(#pgBlue)"/>
+          <path d="M52 6a8 8 0 0 1 8 8v28a8 8 0 0 1-8 8H30l-12 10v-10h-6" fill="#000" opacity=".1"/>
+          <ellipse cx="16" cy="14" rx="7" ry="3.5" fill="#fff" opacity=".28" transform="rotate(-25 16 14)"/>
+          <path d="M20 30v-3a12 12 0 0 1 24 0v3" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          <rect x="17" y="28" width="7" height="10" rx="3" fill="#fff"/><rect x="40" y="28" width="7" height="10" rx="3" fill="#fff"/>
+          <path d="M43.5 38c0 3.5-3.5 5-8 5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="34" cy="43" r="2.6" fill="url(#pgRed)"/>
+        </svg></span><h3>Local Support</h3><p>Our local support team works with clients at every step to ensure their cloud systems run smoothly. We collaborate with clients to provide responsive, reliable solutions whenever needed.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="10" y="9" width="36" height="48" rx="6" fill="url(#pgBlue)"/>
+          <rect x="20" y="5" width="16" height="9" rx="3" fill="url(#pgRed)"/>
+          <ellipse cx="18" cy="18" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 18 18)"/>
+          <path d="M17 25l2.5 2.5 4.5-4.5M17 35l2.5 2.5 4.5-4.5M17 45l2.5 2.5 4.5-4.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M28 25.5h11M28 35.5h11M28 45.5h7" stroke="#fff" stroke-opacity=".75" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M47 34l3 .1 1 2.6 2.5 1.1 2.4-1.8 2.9 2.9-1.8 2.4 1.1 2.5 2.6 1-.1 3h0l-2.5.9-1.1 2.5 1.8 2.4-2.9 2.9-2.4-1.8-2.5 1.1-1 2.6h-3l-1-2.6-2.5-1.1-2.4 1.8-2.9-2.9 1.8-2.4-1.1-2.5-2.6-1v-3l2.6-1 1.1-2.5-1.8-2.4 2.9-2.9 2.4 1.8 2.5-1.1z" fill="url(#pgRed)"/>
+          <circle cx="48.5" cy="48" r="4.5" fill="#fff"/>
+        </svg></span><h3>Implementation</h3><p>We offer a comprehensive range of cloud services, including Infrastructure (IAAS), Platform (PAAS), and Software (SAAS). With our integrated approach, we ensure that all your cloud needs are met with the highest quality.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PENGHARGAAN (data asli) -->
+<section class="section section-tint" id="procloud-awards">
+  <div class="container ind-split ind-split-rev">
+    <figure class="ind-fig reveal"><img src="assets/img/product/pc-trophy.jpg" alt="Trofi Alibaba Cloud Industry Solutions Partner of The Year untuk EKSAD" loading="lazy"></figure>
+    <div class="ind-copy reveal">
+      <h2>Our Awards</h2>
+      <p>Recognition from our cloud partners for the solutions we deliver together.</p>
+      <ol class="award-list">
+        <li><span class="yr">2022</span><span><b>Industry Solution Partner of The Year</b><small>Alibaba Cloud</small></span></li>
+        <li><span class="yr">2021</span><span><b>Asia Pacific Innovation Software of The Year</b><small>Huawei Cloud</small></span></li>
+        <li><span class="yr">2021</span><span><b>Top Performing Partner of The Year</b><small>Alibaba Cloud</small></span></li>
+        <li><span class="yr">2020</span><span><b>Top Performing Partner of The Year</b><small>Alibaba Cloud</small></span></li>
+        <li><span class="yr">2019</span><span><b>Best Enterprise Partner</b><small>Alibaba Cloud</small></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PENUTUP + WHATSAPP (teks & nomor asli) -->
+<section class="section feature" id="procloud-statement">
+  <div class="container bcg-solution">
+    <blockquote class="bcg-statement" data-split>Empower your business with <em class="sa-hl">reliable cloud technology.</em></blockquote>
+    <div class="prod-close reveal">
+      <p>Connect with our ProCloud team to explore customized cloud solutions tailored to your operational needs.</p>
+      <a href="https://wa.me/6285133122557" class="btn btn-primary" target="_blank" rel="noopener">Chat on WhatsApp <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: produk terkait (kartu gaya hero BCG) -->
+<section class="section" id="procloud-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <div class="bcg-explore">
+      <a href="services.html#protect" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-security.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cyber Security</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProTect</span>
+          <strong class="c-title">Perlindungan Siber Menyeluruh untuk Bisnis Anda</strong>
+          <span class="c-more"><span class="c-desc">Dari endpoint, akses istimewa, hingga Security Operations Center: lindungi data dan infrastruktur IT dari berbagai ancaman siber.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#prosage" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dashboard.jpg" alt="" loading="lazy">
+        <span class="c-tag">Data &amp; Analytics</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProSAGE</span>
+          <strong class="c-title">Data Analytic untuk Keputusan Bisnis yang Tepat</strong>
+          <span class="c-more"><span class="c-desc">Bangun fondasi data yang kuat, tata kelola yang jelas, dan insight siap pakai, lengkap dengan deteksi risiko sejak dini.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#prodms" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dealer.jpg" alt="" loading="lazy">
+        <span class="c-tag">Automotive</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProDMS</span>
+          <strong class="c-title">Dealer Management System untuk Jaringan Otomotif</strong>
+          <span class="c-more"><span class="c-desc">Kelola penjualan unit, servis bengkel, dan stok sparepart dalam satu sistem terintegrasi dengan laporan real-time untuk keputusan yang lebih cepat.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### HALAMAN: protalent -->
+<div class="svc-page" id="protalent" data-title="Protalent — IT Resources — EKSAD Technology" hidden>
+
+<!-- =====================================================
+     PROTALENT — halaman produk (Products → Protalent). Teks asli https://eksad.com/protalent/
+     (salah ketik pada judul poin diperbaiki). Urutan: hero, cara membantu, 12 spesialisasi, trusted partner, Explore More.
+     ===================================================== -->
+
+<section class="prod-hero pt-hero" id="protalent-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span><span aria-hidden="true">/</span><span>Protalent</span></nav>
+    <div class="prod-hero-grid">
+      <div class="prod-hero-copy">
+        <div class="prod-mark reveal" style="--signal:#29B6E8">
+          <span class="p-glyph p-logo" aria-hidden="true"><svg viewBox="0 0 80 80" preserveAspectRatio="xMinYMid meet">
+        <g class="lg-pop lg-wave lg-blue" style="--i:0"><rect x="30.3" y="3.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 35 8)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:1"><rect x="21.3" y="12.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 26 17)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:2"><rect x="12.3" y="21.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 17 26)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:3"><rect x="3.3" y="30.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 8 35)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:4"><rect x="39.3" y="30.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 44 35)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:5"><rect x="30.3" y="39.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 35 44)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:6"><rect x="21.3" y="48.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 26 53)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:7"><rect x="3.3" y="48.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 8 53)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:8"><rect x="12.3" y="57.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 17 62)"/></g>
+        <g class="lg-pop lg-wave lg-blue" style="--i:9"><rect x="21.3" y="66.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 26 71)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:10"><rect x="66.3" y="39.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 71 44)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:11"><rect x="57.3" y="48.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 62 53)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:12"><rect x="48.3" y="57.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 53 62)"/></g>
+        <g class="lg-pop lg-wave lg-red" style="--i:13"><rect x="39.3" y="66.3" width="9.4" height="9.4" rx="1.4" transform="rotate(45 44 71)"/></g>
+      </svg></span>
+          <span class="prod-mark-txt"><b>Protalent</b><small>IT Resources</small></span>
+        </div>
+        <h1 class="reveal">Your IT <span class="nw">Outsourcing Partner</span></h1>
+        <p class="lead reveal">Protalent is your reliable IT outsourcing partner, dedicated to providing professional IT talent across various specializations for IT companies and web/app developers in Indonesia. We also support companies in other sectors looking to build a robust and skilled in-house IT team.</p>
+        <div class="prod-actions reveal">
+          <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+          <a href="#protalent-talent" class="u-link">See our talent</a>
+        </div>
+      </div>
+      <figure class="pt-fig reveal">
+        <span class="pt-panel" aria-hidden="true"></span>
+        <img class="pt-people" src="assets/img/product/pt-team.png" alt="Dua profesional IT berpakaian formal tersenyum">
+        <span class="pt-chip" style="--x:5%;--y:40%;--d:0s">Backend Developer</span>
+        <span class="pt-chip pt-chip-r" style="--x:5%;--y:62%;--d:-1.4s">UI/UX</span>
+        <span class="pt-chip" style="--x:8%;--y:84%;--d:-2.6s">DevOps Engineer</span>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CARA MEMBANTU -->
+<section class="section section-tint" id="protalent-how">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>How We Help You Grow</h2>
+      <p>With Protalent, you gain access to top-tier professionals ready to drive your projects to success.</p>
+    </div>
+    <ol class="why-list why-list-4">
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <circle cx="40" cy="18" r="9" fill="url(#pgBlue)" opacity=".55"/><path d="M24 54c0-10 7-17 16-17s16 7 16 17z" fill="url(#pgBlue)" opacity=".55"/>
+          <circle cx="25" cy="21" r="10" fill="url(#pgBlue)"/><path d="M7 57c0-11 8-19 18-19s18 8 18 19z" fill="url(#pgBlue)"/>
+          <ellipse cx="21" cy="17" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 21 17)"/>
+          <circle cx="49" cy="46" r="10" fill="url(#pgRed)"/><path d="M49 41v10M44 46h10" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+        </svg></span><h3>We Work as an Extension of Your Team</h3><p>We work as a true extension of your team. We believe in rolling up our sleeves, diving in and working together to deliver the top-quality, tailored solutions our clients need to grow and thrive.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M41 41l15 15" stroke="url(#pgRed)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="27" cy="27" r="21" fill="url(#pgBlue)"/>
+          <circle cx="27" cy="27" r="15" fill="#fff" opacity=".2"/>
+          <circle cx="27" cy="22" r="5.5" fill="#fff"/><path d="M17 37c0-6 4.5-9.5 10-9.5s10 3.5 10 9.5z" fill="#fff"/>
+          <ellipse cx="18" cy="14" rx="7" ry="4" fill="#fff" opacity=".28" transform="rotate(-35 18 14)"/>
+        </svg></span><h3>We Are Experienced Recruiters</h3><p>We are a team of expert recruiters, with a mission to match talented people with successful employers. We strongly believe in building a value of trust, honesty and transparency with our clients so as to develop long term relationships and to adopt flexible approach as per their needs.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M28 4h8l1.6 7.2 5.4 2.2 6.2-4 5.7 5.7-4 6.2 2.2 5.4L60 28v8l-7.2 1.6-2.2 5.4 4 6.2-5.7 5.7-6.2-4-5.4 2.2L36 60h-8l-1.6-7.2-5.4-2.2-6.2 4-5.7-5.7 4-6.2-2.2-5.4L4 36v-8l7.2-1.6 2.2-5.4-4-6.2 5.7-5.7 6.2 4 5.4-2.2z" fill="url(#pgBlue)"/>
+          <circle cx="32" cy="32" r="13" fill="url(#pgRed)"/>
+          <path d="M26 32.5l4.2 4.2 8-8.2" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <ellipse cx="20" cy="14" rx="7" ry="3.5" fill="#fff" opacity=".28" transform="rotate(-30 20 14)"/>
+        </svg></span><h3>We Offer Smart, Tailored Outsourcing and HR Solutions</h3><p>Through our tailored approach, exceptional support, and flexible solutions, we make finding and retaining top talents easier and simpler.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M32 32L12 12M32 32L52 12M32 32L12 52M32 32L52 52" stroke="#1B5EAB" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="8" fill="url(#pgBlue)"/><circle cx="52" cy="12" r="8" fill="url(#pgBlue)"/>
+          <circle cx="12" cy="52" r="8" fill="url(#pgBlue)"/><circle cx="52" cy="52" r="8" fill="url(#pgRed)"/>
+          <circle cx="32" cy="32" r="13" fill="url(#pgBlue)"/>
+          <path d="M19 32h26M32 19c-4 4-5.5 8-5.5 13s1.5 9 5.5 13M32 19c4 4 5.5 8 5.5 13s-1.5 9-5.5 13" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="1.8"/>
+          <ellipse cx="26" cy="25" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 26 25)"/>
+        </svg></span><h3>We Have Rich Sourcing Experience Across Industries</h3><p>We have been providing outsourcing solutions to various clients for eight years now, helping them streamline their operations, save valuable time, and cut costs.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 12 SPESIALISASI (foto asli) -->
+<section class="section" id="protalent-talent">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Twelve Specializations. One Talent Partner</h2>
+      <p>Highly skilled and competent IT specialists, matched to the needs of your projects and teams.</p>
+    </div>
+    <div class="role-grid">
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-backend.jpg" alt="" loading="lazy"></figure><h3>Backend Developer</h3><p>Java, .Net, Golang, NodeJS, and PHP Developer.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-frontend.jpg" alt="" loading="lazy"></figure><h3>Frontend Developer</h3><p>React.JS, Vue.JS, Angular.JS Developer.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-fullstack.jpg" alt="" loading="lazy"></figure><h3>Full-stack Developer</h3><p>Backend and frontend developer.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-mobile.jpg" alt="" loading="lazy"></figure><h3>Mobile Developer</h3><p>React Native, Flutter, Native Android, iOS Developer.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-ba.jpg" alt="" loading="lazy"></figure><h3>Business Analyst</h3><p>Business Analyst, System Analyst, Technical Writer.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-pm.jpg" alt="" loading="lazy"></figure><h3>Project Management</h3><p>Project Management, Scrum Master.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-qa.jpg" alt="" loading="lazy"></figure><h3>Software QA</h3><p>Quality Assurance, QA Automation, QA Manual.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-uiux.jpg" alt="" loading="lazy"></figure><h3>UI/UX</h3><p>UI/UX Designer, Graphic Designer, UX Researcher.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-devops.jpg" alt="" loading="lazy"></figure><h3>DevOps Engineer</h3><p>DevOps Engineer, DevOps Specialist, DevOps Consultant.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-security.jpg" alt="" loading="lazy"></figure><h3>IT Security Specialist</h3><p>IT Security Specialist, IT Security Engineer.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-manager.jpg" alt="" loading="lazy"></figure><h3>IT Manager</h3><p>Technical Lead, Engineering Manager, IT Manager.</p></article>
+      <article class="role-card reveal"><figure><img src="assets/img/product/pt-architect.jpg" alt="" loading="lazy"></figure><h3>IT Architect</h3><p>IT Architect, Solution Architect, Data Architect.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: produk terkait (kartu gaya hero BCG) -->
+<section class="section" id="protalent-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <div class="bcg-explore">
+      <a href="services.html#prohace" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-team.jpg" alt="" loading="lazy">
+        <span class="c-tag">Human Capital</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>Prohace</span>
+          <strong class="c-title">Human Capital Information System Berbasis Cloud</strong>
+          <span class="c-more"><span class="c-desc">Kelola data karyawan, absensi, payroll, dan penilaian kinerja dalam satu aplikasi yang ringan dan mudah diintegrasikan dengan sistem perusahaan.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#procloud" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-datacenter.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cloud</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProCloud</span>
+          <strong class="c-title">Infrastruktur Multi Cloud yang Aman, Efisien, dan Fleksibel</strong>
+          <span class="c-more"><span class="c-desc">Konsultasi, migrasi, implementasi, dan dukungan lokal untuk Alibaba Cloud, AWS, Azure, Google Cloud, dan Huawei Cloud dari satu mitra.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#protect" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-security.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cyber Security</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProTect</span>
+          <strong class="c-title">Perlindungan Siber Menyeluruh untuk Bisnis Anda</strong>
+          <span class="c-more"><span class="c-desc">Dari endpoint, akses istimewa, hingga Security Operations Center: lindungi data dan infrastruktur IT dari berbagai ancaman siber.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### HALAMAN: protect -->
+<div class="svc-page" id="protect" data-title="ProTect — Security System — EKSAD Technology" hidden>
+
+<!-- =====================================================
+     PROTECT — halaman produk (Products → ProTect). Teks asli https://eksad.com/protect/
+     Urutan: hero (ikon perisai), ringkasan layanan, enam solusi, pernyataan, Explore More.
+     ===================================================== -->
+
+<section class="prod-hero" id="protect-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span><span aria-hidden="true">/</span><span>ProTect</span></nav>
+    <div class="prod-hero-grid">
+      <div class="prod-hero-copy">
+        <div class="prod-mark reveal" style="--signal:#E8222E">
+          <span class="p-glyph p-logo" aria-hidden="true"><svg viewBox="0 0 88 100" preserveAspectRatio="xMinYMid meet">
+        <defs><clipPath id="protect-ptL"><rect x="0" y="0" width="11" height="100"/></clipPath><clipPath id="protect-ptB"><rect x="25" y="40" width="4.5" height="40"/></clipPath></defs>
+        <g class="pt-shield"><path d="M44 4 C52 10 64 14 82 15 V55 C82 76 64 89 44 96 C24 89 6 76 6 55 V15 C24 14 36 10 44 4 Z" fill="url(#pgBlue)"/><path d="M44 4 C52 10 64 14 82 15 V55 C82 76 64 89 44 96 C24 89 6 76 6 55 V15 C24 14 36 10 44 4 Z" fill="#123f7a" clip-path="url(#ptL)"/></g>
+        <path class="g-run pt-run" d="M44 4 C52 10 64 14 82 15 V55 C82 76 64 89 44 96 C24 89 6 76 6 55 V15 C24 14 36 10 44 4 Z"/>
+        <path class="pt-shackle" d="M33 47 V37 a11 11 0 0 1 22 0 V47"/>
+        <g class="pt-body"><rect x="25" y="45" width="38" height="31" rx="2.5" fill="url(#pgRed)"/><rect x="25" y="45" width="38" height="31" rx="2.5" fill="#a5121b" clip-path="url(#ptB)"/></g>
+        <circle class="pt-ring" cx="44" cy="60.5" r="6"/>
+      </svg></span>
+          <span class="prod-mark-txt"><b>ProTect</b><small>Security System</small></span>
+        </div>
+        <h1 class="reveal">A Trusted Solution to Protect Your Digital Business</h1>
+        <p class="lead reveal">EKSAD Technology presents reliable and comprehensive Cyber Security solutions to help you protect your data and IT infrastructure from various cyber threats.</p>
+        <div class="prod-actions reveal">
+          <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+          <a href="#protect-solutions" class="u-link">Explore the solutions</a>
+        </div>
+      </div>
+      <figure class="prod-hero-fig is-icon reveal" style="--signal:#1B5EAB">
+        <svg class="ptc-hero-ico" viewBox="0 0 220 180" role="img" aria-label="Ilustrasi perisai dengan gembok pada jendela aplikasi">
+          <defs>
+            <linearGradient id="ptcShield" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfdcec"/></linearGradient>
+            <linearGradient id="ptcBar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3eaf3"/></linearGradient>
+          </defs>
+          <rect x="10" y="12" width="200" height="158" rx="18" fill="url(#pgBlue)"/>
+          <path d="M210 30v122a18 18 0 0 1-18 18H110V12h82a18 18 0 0 1 18 18z" fill="#000" opacity=".1"/>
+          <path d="M28 12h164a18 18 0 0 1 18 18v14H10V30a18 18 0 0 1 18-18z" fill="url(#ptcBar)"/>
+          <circle cx="32" cy="28" r="6" fill="#E8222E"/><circle cx="50" cy="28" r="6" fill="#ff8a5c"/><circle cx="68" cy="28" r="6" fill="#29B6E8"/>
+          <ellipse cx="48" cy="64" rx="26" ry="9" fill="#fff" opacity=".22" transform="rotate(-18 48 64)"/>
+          <path d="M110 56l42 15v29c0 27-17.5 47-42 58-24.5-11-42-31-42-58V71z" fill="url(#ptcShield)"/>
+          <path d="M110 56l42 15v29c0 27-17.5 47-42 58z" fill="#0e3466" opacity=".1"/>
+          <path d="M110 68l31 11v21c0 20-12.8 35-31 43.5-18.2-8.5-31-23.5-31-43.5V79z" fill="none" stroke="#1B5EAB" stroke-opacity=".18" stroke-width="2"/>
+          <path d="M98 101v-9a12 12 0 0 1 24 0v9" fill="none" stroke="#8aa3c2" stroke-width="7" stroke-linecap="round"/>
+          <rect x="90" y="99" width="40" height="32" rx="7" fill="url(#pgRed)"/>
+          <ellipse cx="100" cy="106" rx="7" ry="3" fill="#fff" opacity=".35" transform="rotate(-20 100 106)"/>
+          <circle cx="110" cy="113" r="4.6" fill="#fff"/><path d="M110 115v8" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- RINGKASAN LAYANAN -->
+<section class="section section-tint" id="protect-security">
+  <div class="container bcg-2col">
+    <h2 class="reveal">Protect. Monitor. Respond</h2>
+    <div class="bcg-2col-body reveal">
+      <p>EKSAD Cyber Security provides protection, real-time threat monitoring, attack prevention, and rapid response when security incidents occur. Our professional team is ready to assist you with consulting and implementation services tailored to your company's needs.</p>
+      <a href="contact.html" class="u-link">Talk to our security team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ENAM SOLUSI -->
+<section class="section" id="protect-solutions">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Six Solutions. One Security Partner</h2>
+      <p>From endpoints and privileged accounts to round-the-clock monitoring, every layer of your business is covered.</p>
+    </div>
+    <ol class="why-list why-list-3">
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="12" width="40" height="28" rx="4" fill="url(#pgBlue)"/>
+          <rect x="9" y="17" width="30" height="18" rx="1.5" fill="#fff" opacity=".2"/>
+          <path d="M0 44h48l-3 5H3z" fill="url(#pgBlue)"/>
+          <ellipse cx="12" cy="18" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 12 18)"/>
+          <rect x="40" y="22" width="20" height="34" rx="4" fill="url(#pgRed)"/>
+          <rect x="44" y="27" width="12" height="20" rx="1.5" fill="#fff" opacity=".85"/>
+          <circle cx="50" cy="51" r="1.8" fill="#fff"/>
+        </svg></span><h3>Unified Endpoint Management (UEM)</h3><p>This refers to a comprehensive approach to managing and securing an organization's endpoint devices (such as smartphones, laptops, desktops, tablets, and IoT devices). The Unified Endpoint Management (UEM) platform provides tools to manage device configurations, security policies, applications, and user access across various types of devices within an organization.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <circle cx="24" cy="18" r="11" fill="url(#pgBlue)"/>
+          <path d="M4 56c0-12 9-20 20-20s20 8 20 20z" fill="url(#pgBlue)"/>
+          <ellipse cx="20" cy="13" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 20 13)"/>
+          <circle cx="46" cy="38" r="9" fill="url(#pgRed)"/><circle cx="46" cy="38" r="3.2" fill="#fff"/>
+          <path d="M50.5 45l7 9M55 51l-3 2.5M57.5 54.5l-3 2.5" stroke="url(#pgRed)" stroke-width="4.5" stroke-linecap="round"/>
+        </svg></span><h3>Privileged Access Management (PAM)</h3><p>This refers to a set of cybersecurity practices and technologies designed to manage and monitor access to critical systems and data by privileged users (such as system administrators, IT staff, or other high-level users with elevated access permissions). Privileged Access Management (PAM) solutions help secure, control, and monitor privileged accounts to reduce the risk of data breaches and cyberattacks.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M14 22l-7-6M12 33H3M14 44l-7 6M40 22l7-6M42 33h9M40 44l7 6" stroke="#1B5EAB" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 16a7 7 0 0 1 14 0" fill="url(#pgBlue)"/>
+          <ellipse cx="27" cy="35" rx="15" ry="19" fill="url(#pgBlue)"/>
+          <path d="M27 18v35" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+          <ellipse cx="21" cy="25" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-50 21 25)"/>
+          <circle cx="49" cy="49" r="12" fill="url(#pgRed)"/>
+          <path d="M49 42v14M53 45.5c-1-1.5-2.5-2-4-2-2.2 0-4 1-4 3s2 2.5 4 3 4 1 4 3-1.8 3-4 3c-1.5 0-3.2-.6-4.2-2" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></span><h3>Bug Bounty</h3><p>It is a program offered by organizations, companies, or platforms to encourage individuals (often ethical hackers, security researchers, or developers) to find and report security vulnerabilities or bugs in their software or systems. In return for discovering and reporting these issues, participants are rewarded with money, recognition, or other incentives.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M32 4l22 8v16c0 15-9.5 26.5-22 32C19.5 54.5 10 43 10 28V12z" fill="url(#pgBlue)" transform="translate(-4 0) scale(.9)"/>
+          <path d="M24.8 3.6l19.8 7.2v14.4c0 13.5-8.6 23.9-19.8 28.8z" fill="#000" opacity=".12"/>
+          <ellipse cx="18" cy="14" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 18 14)"/>
+          <path d="M49 49l9 9" stroke="url(#pgRed)" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="41" cy="41" r="12" fill="url(#pgRed)"/>
+          <path d="M41 34.5v8" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="41" cy="47" r="1.9" fill="#fff"/>
+        </svg></span><h3>Vulnerability Assessment (VA)</h3><p>Refers to the process of identifying, evaluating, and prioritizing security vulnerabilities within a system or network. It is a crucial part of cybersecurity to ensure that an organization's infrastructure remains secure. Vulnerability Assessment (VA) involves scanning systems to detect weaknesses, determining their severity levels, and implementing fixes or mitigation controls to prevent exploitation.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="8" width="56" height="38" rx="5" fill="url(#pgBlue)"/>
+          <path d="M60 13v28a5 5 0 0 1-5 5H32V8h23a5 5 0 0 1 5 5z" fill="#000" opacity=".1"/>
+          <ellipse cx="14" cy="14" rx="7" ry="3.5" fill="#fff" opacity=".28" transform="rotate(-20 14 14)"/>
+          <path d="M10 30h9l4-9 6 17 5-12 3 4h17" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 46l-3 9h18l-3-9z" fill="url(#pgBlue)"/>
+          <rect x="18" y="54" width="28" height="4" rx="2" fill="url(#pgRed)"/>
+        </svg></span><h3>Security Operations Center (SOC)</h3><p>It is a centralized facility within an organization that is responsible for monitoring, detecting, responding to, and mitigating security threats and incidents. It is a vital part of an organization's cybersecurity strategy.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M32 4l22 8v16c0 15-9.5 26.5-22 32C19.5 54.5 10 43 10 28V12z" fill="url(#pgBlue)"/>
+          <path d="M32 4l22 8v16c0 15-9.5 26.5-22 32z" fill="#000" opacity=".12"/>
+          <ellipse cx="23" cy="16" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 23 16)"/>
+          <circle cx="32" cy="31" r="9" fill="url(#pgRed)"/>
+          <path d="M32 18v4M32 40v4M19 31h4M41 31h4M23 22l3 3M41 22l-3 3M23 40l3-3M41 40l-3-3" stroke="url(#pgRed)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M22 41L42 21" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/>
+        </svg></span><h3>Antimalware</h3><p>Refers to software designed to detect, prevent, and remove malicious software (malware) from computers or networks. Malware can include viruses, worms, trojans, ransomware, spyware, adware, and other types of harmful programs that can compromise system and data security.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PERNYATAAN (teks asli) -->
+<section class="section feature" id="protect-statement">
+  <div class="container bcg-solution">
+    <blockquote class="bcg-statement reveal">Cybersecurity has become a mandatory need for every business that wants to survive and grow in the digital era.</blockquote>
+    <div class="prod-close reveal">
+      <p>Our professional team is ready to assist you with consulting and implementation services tailored to your company's needs.</p>
+      <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: produk terkait (kartu gaya hero BCG) -->
+<section class="section" id="protect-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <div class="bcg-explore">
+      <a href="services.html#procloud" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-datacenter.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cloud</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProCloud</span>
+          <strong class="c-title">Infrastruktur Multi Cloud yang Aman, Efisien, dan Fleksibel</strong>
+          <span class="c-more"><span class="c-desc">Konsultasi, migrasi, implementasi, dan dukungan lokal untuk Alibaba Cloud, AWS, Azure, Google Cloud, dan Huawei Cloud dari satu mitra.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#prosage" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dashboard.jpg" alt="" loading="lazy">
+        <span class="c-tag">Data &amp; Analytics</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProSAGE</span>
+          <strong class="c-title">Data Analytic untuk Keputusan Bisnis yang Tepat</strong>
+          <span class="c-more"><span class="c-desc">Bangun fondasi data yang kuat, tata kelola yang jelas, dan insight siap pakai, lengkap dengan deteksi risiko sejak dini.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#protalent" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/product/pt-manager.jpg" alt="" loading="lazy">
+        <span class="c-tag">IT Resources</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>Protalent</span>
+          <strong class="c-title">Talenta IT Profesional untuk Tim Anda</strong>
+          <span class="c-more"><span class="c-desc">Akses developer, analis, QA, hingga arsitek IT berpengalaman untuk memperkuat proyek dan tim internal Anda.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ##################################################### HALAMAN: prosage -->
+<div class="svc-page" id="prosage" data-title="ProSAGE — Data Analytic — EKSAD Technology" hidden>
+
+<!-- =====================================================
+     PROSAGE — halaman produk (Products → ProSAGE). Teks asli https://eksad.com/prosage/
+     Urutan: hero (foto), tantangan data, tiga layanan (alur bernomor), prinsip, dampak, kepercayaan & kapabilitas, Explore More.
+     ===================================================== -->
+
+<section class="prod-hero" id="prosage-overview">
+  <div class="container">
+    <nav class="crumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Products</span><span aria-hidden="true">/</span><span>ProSAGE</span></nav>
+    <div class="prod-hero-grid">
+      <div class="prod-hero-copy">
+        <div class="prod-mark reveal" style="--signal:#1B5EAB">
+          <span class="p-glyph p-logo" aria-hidden="true"><svg viewBox="10 8 220 366" preserveAspectRatio="xMinYMid meet">
+        <path class="ps-flame" d="M58 270 C25 230 15 175 45 125 C75 80 115 60 125 18 C150 60 160 120 135 175 C115 215 80 240 58 270 Z"/>
+        <path class="ps-bar" pathLength="1" style="--i:0" d="M189 148 H196"/>
+        <path class="ps-bar ps-light" pathLength="1" style="--i:1" d="M167 183 H209"/>
+        <path class="ps-bar" pathLength="1" style="--i:2" d="M139 216 H211"/>
+        <path class="ps-bar ps-light" pathLength="1" style="--i:3" d="M109 250 H201"/>
+        <path class="ps-bar" pathLength="1" style="--i:4" d="M94 286 H176"/>
+        <path class="ps-bar ps-light" pathLength="1" style="--i:5" d="M94 320 H141"/>
+        <path class="ps-bar" pathLength="1" style="--i:6" d="M109 354 H116"/>
+      </svg></span>
+          <span class="prod-mark-txt"><b>ProSAGE</b><small>Data Analytic</small></span>
+        </div>
+        <h1 class="reveal">Transforming Data into Strategic Business Advantage</h1>
+        <p class="lead reveal">ProSAGE helps organizations establish robust data foundations and translate them into faster, more accurate, and secure decision-making through specialized consulting services, comprehensive data governance frameworks, and advanced business intelligence activation coupled with fraud detection capabilities.</p>
+        <div class="prod-actions reveal">
+          <a href="contact.html" class="btn btn-primary">Start Now <span class="arr" aria-hidden="true">→</span></a>
+          <a href="#prosage-services" class="u-link">Explore our services</a>
+        </div>
+      </div>
+      <figure class="prod-hero-fig is-photo reveal">
+        <img src="assets/img/hero-dashboard.jpg" alt="Analis bekerja dengan grafik data di laptop">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- TANTANGAN DATA: tiga tekanan (ikon) -> akar masalah (kartu navy). Teks asli eksad.com/prosage -->
+<section class="section section-tint" id="prosage-challenge">
+  <div class="container">
+    <div class="bcg-2col ch-head">
+      <h2 class="reveal">Rich in Data. Short on Shared Meaning</h2>
+      <p class="lead reveal">In today's rapidly evolving financial landscape, while most enterprises are rich in data, they struggle to extract consistent business value from their information assets.</p>
+    </div>
+    <div class="ch-grid">
+      <ul class="ch-list">
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="8" y="4" width="38" height="50" rx="5" fill="url(#pgBlue)"/><ellipse cx="16" cy="12" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 16 12)"/>
+  <path d="M16 18h22M16 26h22M16 34h14" stroke="#fff" stroke-opacity=".7" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="46" cy="46" r="13" fill="url(#pgRed)"/><path d="M46 39l2 4.2 4.6.6-3.4 3.2.9 4.6-4.1-2.3-4.1 2.3.9-4.6-3.4-3.2 4.6-.6z" fill="#fff"/></svg></span><h3>Mounting regulatory pressures</h3></li>
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="26" cy="19" r="12" fill="url(#pgBlue)"/><path d="M4 58c0-13 10-22 22-22s22 9 22 22z" fill="url(#pgBlue)"/><ellipse cx="21" cy="13" rx="5.5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 21 13)"/>
+  <path d="M48 30l3.4 7 7.6 1.1-5.5 5.4 1.3 7.6-6.8-3.6-6.8 3.6 1.3-7.6-5.5-5.4 7.6-1.1z" fill="url(#pgRed)"/></svg></span><h3>Escalating customer expectations</h3></li>
+        <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 4l22 8v16c0 15-9.5 26.5-22 32C19.5 54.5 10 43 10 28V12z" fill="url(#pgBlue)"/><path d="M32 4l22 8v16c0 15-9.5 26.5-22 32z" fill="#000" opacity=".12"/><ellipse cx="23" cy="16" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 23 16)"/>
+  <path d="M32 18l13 23H19z" fill="url(#pgRed)" stroke="url(#pgRed)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M32 26v7" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="37.5" r="1.8" fill="#fff"/></svg></span><h3>Sophisticated operational risks, including advanced fraud schemes</h3></li>
+      </ul>
+      <div class="ch-root reveal">
+        <span class="ch-root-tag">The real root cause</span>
+        <p class="ch-root-big">It isn't the absence of tools. It's the lack of unified language and standardized definitions across business functions.</p>
+        <p>When the same information is interpreted differently by various departments, decision-making slows to a crawl, creating organizational friction and missed opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIGA LAYANAN: alur bernomor (main.js: FLOW STEPS), ikon SVG gaya nilai Home -->
+<section class="section" id="prosage-services">
+  <div class="container flow-grid">
+    <div class="sec-intro reveal">
+      <h2>Three Services. One Data Foundation</h2>
+      <p>From mapping your data landscape to detecting risks early, each step builds on the one before it.</p>
+    </div>
+    <div class="flow-panel reveal">
+      <ol class="flow-steps flow-steps-3">
+        <li class="flow-step is-active" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M28 8a24 24 0 1 0 24 24H28z" fill="url(#pgBlue)"/>
+          <path d="M28 32V8a24 24 0 0 1 24 24z" fill="#000" opacity=".08"/>
+          <ellipse cx="16" cy="20" rx="7" ry="3.5" fill="#fff" opacity=".28" transform="rotate(-40 16 20)"/>
+          <path d="M34 4a24 24 0 0 1 24 24H34z" fill="url(#pgRed)"/>
+          <path d="M40 10a18 18 0 0 1 12 12" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"/>
+        </svg></span>
+          <span class="flow-no">1</span>
+          <h3>Data Consulting &amp; Assessment</h3>
+          <p>Comprehensive mapping of current data landscape, establishing core definitions through collaborative glossary development, and creating phased improvement roadmaps prioritized by business value impact.</p>
+        </li>
+        <li class="flow-step" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <path d="M6 12c0-5 10-8 22-8s22 3 22 8v38c0 5-10 8-22 8S6 55 6 50z" fill="url(#pgBlue)"/>
+          <ellipse cx="28" cy="12" rx="22" ry="8" fill="#5a9be6"/>
+          <path d="M6 25c0 5 10 8 22 8s22-3 22-8M6 38c0 5 10 8 22 8s22-3 22-8" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2"/>
+          <ellipse cx="18" cy="11" rx="8" ry="3" fill="#fff" opacity=".28" transform="rotate(-8 18 11)"/>
+          <circle cx="48" cy="46" r="13" fill="url(#pgRed)"/>
+          <path d="M42 46.5l4.2 4.2 7.6-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></span>
+          <span class="flow-no">2</span>
+          <h3>Master Data Management &amp; Governance</h3>
+          <p>Building single sources of truth for critical entities including customers, partners, and products while establishing clear roles, policies, and data maintenance cycles to ensure sustained quality.</p>
+        </li>
+        <li class="flow-step" tabindex="0">
+          <span class="flow-ico flow-svg" aria-hidden="true"><svg viewBox="0 0 64 64">
+          <rect x="4" y="34" width="11" height="24" rx="3" fill="url(#pgBlue)"/>
+          <rect x="19" y="22" width="11" height="36" rx="3" fill="url(#pgBlue)"/>
+          <rect x="34" y="10" width="11" height="48" rx="3" fill="url(#pgBlue)"/>
+          <ellipse cx="37" cy="16" rx="2.5" ry="5" fill="#fff" opacity=".28" transform="rotate(0 37 16)"/>
+          <path d="M47 30l14 25H33z" fill="url(#pgRed)" stroke="url(#pgRed)" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M47 38v8" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="47" cy="50.5" r="1.9" fill="#fff"/>
+        </svg></span>
+          <span class="flow-no">3</span>
+          <h3>Business Insights &amp; Risk Detection</h3>
+          <p>Converting organized data into actionable operational and managerial insights, including sophisticated early detection frameworks that minimize false positives and accelerate case resolution.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PRINSIP (teks asli) -->
+<section class="section feature" id="prosage-principle">
+  <div class="container">
+    <blockquote class="bcg-statement reveal">Exceptional decisions emerge from agreed-upon meanings and consistent data practices.</blockquote>
+  </div>
+</section>
+
+<!-- DAMPAK -->
+<section class="section" id="prosage-impact">
+  <div class="container ind-split">
+    <div class="ind-copy reveal">
+      <h2>Delivering Measurable Business Impact</h2>
+      <p>By establishing uniform data language across teams, organizations can make decisions with greater speed and confidence, as all stakeholders reference shared understanding and consistent definitions. Risk exposure decreases through relevant, measurable early detection systems that enable precise case handling without adding operational burden.</p>
+      <p>Work processes become more efficient and accountable due to clearly defined roles and workflows, while organizations build ready-to-use foundations for future initiatives, from AI implementation to performance planning and control, creating sustainable business impact.</p>
+    </div>
+    <figure class="ind-fig reveal"><img src="assets/img/product/ps-impact.jpg" alt="Tangan menunjuk grafik batang dan diagram lingkaran di layar" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- KEPERCAYAAN & KAPABILITAS (digabung): latar navy, ringkasan kiri + 6 poin berikon kanan. Teks asli diringkas. -->
+<section class="section tr-sec" id="prosage-expertise">
+  <div class="container tr-grid">
+    <div class="tr-copy">
+      <h2 class="reveal">Built on Trust. Proven by Results</h2>
+      <p class="reveal">ProSAGE combines EKSAD's reputation and governance maturity with refined practical methodologies and a consistent focus on measurable business value creation.</p>
+      <p class="reveal">Rather than simply delivering reports, we architect sustainable working methods that deliver lasting results.</p>
+      <a href="contact.html" class="btn btn-accent reveal">Start Now <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+    <ul class="tr-list">
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 4l22 8v16c0 15-9.5 26.5-22 32C19.5 54.5 10 43 10 28V12z" fill="url(#pgBlue)"/><path d="M32 4l22 8v16c0 15-9.5 26.5-22 32z" fill="#000" opacity=".12"/><ellipse cx="23" cy="16" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 23 16)"/>
+  <path d="M22 31.5l7 7 13.5-14" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Mature Governance</h3><p>Part of the EKSAD family (PT Tiga Daya Digital Indonesia), experienced with stringent procurement standards across legal, security, and compliance.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="url(#pgBlue)"/><ellipse cx="22" cy="18" rx="8" ry="4" fill="#fff" opacity=".28" transform="rotate(-30 22 18)"/>
+  <path d="M6 32h52M32 6c-8 8-11 16-11 26s3 18 11 26M32 6c8 8 11 16 11 26s-3 18-11 26" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>
+  <circle cx="50" cy="50" r="9" fill="url(#pgRed)"/></svg></span><h3>Cross-Sector Experience</h3><p>Financial services, manufacturing, and public services, attuned to operational dynamics and management-level decision-making needs.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M12 50c0-14 14-10 20-20s10-16 20-16" fill="none" stroke="#1B5EAB" stroke-opacity=".4" stroke-width="3.4" stroke-dasharray="1 7" stroke-linecap="round"/>
+  <circle cx="12" cy="50" r="9" fill="url(#pgBlue)"/><ellipse cx="9" cy="46" rx="3.5" ry="2" fill="#fff" opacity=".28" transform="rotate(-30 9 46)"/>
+  <path d="M52 4c-7 0-12 5-12 11.5C40 24 52 34 52 34s12-10 12-18.5C64 9 59 4 52 4z" fill="url(#pgRed)"/><circle cx="52" cy="15.5" r="4.2" fill="#fff"/></svg></span><h3>End-to-End Capabilities</h3><p>From aligning business objectives and cross-functional definitions to governance frameworks and actionable insights.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="4" y="10" width="52" height="48" rx="6" fill="url(#pgBlue)"/><rect x="4" y="10" width="52" height="13" rx="6" fill="url(#pgRed)"/>
+  <rect x="14" y="4" width="5" height="12" rx="2.5" fill="#0e3466"/><rect x="41" y="4" width="5" height="12" rx="2.5" fill="#0e3466"/>
+  <path d="M17 40l7 7 15-15" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Disciplined Delivery</h3><p>Consistent work rhythms, transparent risk and issue management, and human-centered change approaches.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="18" cy="22" r="11" fill="url(#pgBlue)"/><path d="M2 54c0-11 7-18 16-18s16 7 16 18z" fill="url(#pgBlue)"/>
+  <circle cx="46" cy="22" r="11" fill="url(#pgRed)"/><path d="M30 54c0-11 7-18 16-18s16 7 16 18z" fill="url(#pgRed)"/>
+  <ellipse cx="14" cy="17" rx="5" ry="3" fill="#fff" opacity=".28" transform="rotate(-30 14 17)"/><path d="M26 8c4-3 8-3 12 0" fill="none" stroke="#1B5EAB" stroke-width="2.6" stroke-linecap="round"/><path d="M36 5l2.4 3-3.4 1.6" fill="none" stroke="#1B5EAB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Knowledge Transfer</h3><p>Clear success indicators and knowledge transfer commitments, as a vendor-neutral partner, to ensure independence post-implementation.</p></li>
+      <li class="reveal"><span class="why-ico why-svg" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="2" y="12" width="40" height="28" rx="4" fill="url(#pgBlue)"/><path d="M-2 44h48l-3 5H1z" fill="url(#pgBlue)"/><ellipse cx="10" cy="18" rx="6" ry="3" fill="#fff" opacity=".28" transform="rotate(-25 10 18)"/>
+  <path d="M50 18c-7 0-12 5-12 11.5C38 38 50 48 50 48s12-10 12-18.5C62 23 57 18 50 18z" fill="url(#pgRed)"/><circle cx="50" cy="29.5" r="4.2" fill="#fff"/></svg></span><h3>Adaptive Delivery</h3><p>On-site and remote across multiple locations, maintaining transformation momentum regardless of operational constraints.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- EXPLORE MORE: produk terkait (kartu gaya hero BCG) -->
+<section class="section" id="prosage-explore">
+  <div class="container">
+    <div class="sec-intro reveal">
+      <h2>Explore More</h2>
+    </div>
+    <div class="bcg-explore">
+      <a href="services.html#prodms" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-dealer.jpg" alt="" loading="lazy">
+        <span class="c-tag">Automotive</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProDMS</span>
+          <strong class="c-title">Dealer Management System untuk Jaringan Otomotif</strong>
+          <span class="c-more"><span class="c-desc">Kelola penjualan unit, servis bengkel, dan stok sparepart dalam satu sistem terintegrasi dengan laporan real-time untuk keputusan yang lebih cepat.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#procloud" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-datacenter.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cloud</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProCloud</span>
+          <strong class="c-title">Infrastruktur Multi Cloud yang Aman, Efisien, dan Fleksibel</strong>
+          <span class="c-more"><span class="c-desc">Konsultasi, migrasi, implementasi, dan dukungan lokal untuk Alibaba Cloud, AWS, Azure, Google Cloud, dan Huawei Cloud dari satu mitra.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a href="services.html#protect" class="ex-card c-photo reveal">
+        <img class="c-img" src="assets/img/hero-security.jpg" alt="" loading="lazy">
+        <span class="c-tag">Cyber Security</span>
+        <span class="c-panel">
+          <span class="c-meta"><b>Product</b>ProTect</span>
+          <strong class="c-title">Perlindungan Siber Menyeluruh untuk Bisnis Anda</strong>
+          <span class="c-more"><span class="c-desc">Dari endpoint, akses istimewa, hingga Security Operations Center: lindungi data dan infrastruktur IT dari berbagai ancaman siber.</span></span>
+          <span class="c-btn">Learn More <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- =====================================================
+     7. CTA — dark rounded banner
+     ===================================================== -->
+<section class="cta-stage" id="cta">
+  <!-- tumpukan bentuk EKSAD berbasis fisika (assets/js/cta-physics.js); kursor mendorong bentuk -->
+  <canvas class="cta-canvas" aria-hidden="true"></canvas>
+  <div class="cta-content">
+    <p class="cta-kicker">Siap mempercepat bisnis Anda?</p>
+    <h2 class="cta-title" aria-label="Let's Grow Together!"><span class="ln" aria-hidden="true">Let's Grow</span><span class="ln" aria-hidden="true">Together!</span></h2>
+    <a href="mailto:info@eksad.com" class="cta-btn">Hubungi Kami <span aria-hidden="true">●</span></a>
+  </div>
+</section>
+
+
+</main>
+
+<!-- =====================================================
+     8. FOOTER
+     ===================================================== -->
+<!-- Footer bounce: tepi atas melengkung mengikuti kecepatan scroll lalu memantul (GSAP ScrollTrigger) -->
+<footer class="site-footer" id="footer">
+  <svg class="f-wave" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="fGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset=".4" stop-color="#ffffff"/>
+        <stop offset=".75" stop-color="#ffffff"/>
+        <stop offset="1" stop-color="#ffffff"/>
+      </linearGradient>
+    </defs>
+    <path id="fWaveGap" d="M0 100 Q500 100 1000 100 Z" fill="#eef1f8"/>
+    <path id="fWavePath" d="M0 100 Q500 100 1000 100 L1000 200 L0 200 Z" fill="url(#fGrad)"/>
+  </svg>
+  <div class="container">
+    <div class="f-top">
+      <img src="cropped-logo-eksad-fullcolor-small.png" alt="EKSAD Technology" class="f-logo">
+      <p class="f-tag">Your partner in devising development blueprints and executing strategic solutions.</p>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-about">
+        <p>EKSAD is your partner in devising comprehensive development blueprints and executing strategic solutions, poised to conquer both business complexities and technological hurdles.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li><small>Call Us (8/5)</small><a href="tel:+622157958040">(021) 57958040</a></li>
+          <li><small>Email</small><a href="mailto:info@eksad.com">info@eksad.com</a></li>
+          <li><small>Alamat</small>The East Tower 19th Floor, Mega Kuningan, Jakarta Selatan, Indonesia 12950</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="services.html#prodms">ProDMS</a></li>
+          <li><a href="services.html#prohace">Prohace</a></li>
+          <li><a href="services.html#protalent">Protalent</a></li>
+          <li><a href="services.html#procloud">ProCloud</a></li>
+          <li><a href="services.html#protect">ProTect</a></li>
+          <li><a href="services.html#prosage">ProSAGE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="blog.html#event">Event</a></li>
+          <li><a href="blog.html#training">Training</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f-legal">
+      <p>© 2026 PT Tiga Daya Digital Indonesia. All rights reserved.</p>
+      <a href="#top" class="u-link">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="assets/js/cta-physics.js"></script>
+</body>
+</html>
