@@ -11,7 +11,7 @@ Selesai: **Home** (`index.html`), **design system** (`design-system/`), **Our Se
 
 - **Teknologi:** HTML/CSS/JS statis, tanpa build tool. Buka `index.html` langsung di browser.
 - **Library (CDN, perlu internet):** GSAP 3.12.5 + ScrollTrigger, Matter.js 0.19.0 (cdnjs), Google Fonts.
-- **Git:** `git init` sudah dijalankan (branch `main`), tapi **belum ada commit** dan belum ada remote. User akan membuat repo GitHub sendiri. Worktree untuk sesi paralel **ditunda** sampai repo itu ada (lihat bagian Git).
+- **Git:** repo public https://github.com/goocel/Eksad- (remote `origin`, branch `main`). Lihat bagian Git.
 
 ## Struktur file
 
@@ -145,9 +145,11 @@ Folder `design-system/`: `README.md` (token, komponen, gerak, aturan teks, check
 
 ## Git dan sesi paralel
 
-- Belum ada commit. Identitas git di komputer ini belum diatur, dan user menolak pengaturan saat ditanya. **Tanyakan dulu sebelum commit.**
+- Remote: `origin` = https://github.com/goocel/Eksad- (**public**, jadi jangan commit data rahasia). Branch `main` melacak `origin/main`. Commit pertama: 17 Nov 2026.
+- Identitas git (lokal, khusus repo ini): `sanusi <sanusi.goocel@gmail.com>`.
+- Commit dan push hanya kalau user meminta.
 - `.gitignore` sudah mengecualikan `.claude/worktrees/` dan file tes `_t*.html`.
-- Setelah repo GitHub ada: `git remote add origin <url>`, commit pertama, lalu sesi paralel dengan `claude -w <nama>`. Worktree butuh minimal satu commit.
+- Sesi paralel sekarang bisa dipakai: `claude -w <nama>`.
 
 ## Catatan teknis dan hal yang perlu diwaspadai
 
